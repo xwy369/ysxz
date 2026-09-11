@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雅思学术类写作方法论合集 · Task 1 + Task 2</title>
+<style>
+  :root{
+    --bg:#FDFCFA;
+    --surface:#FFFFFF;
+    --ink:#262421;
+    --ink-2:#4A4640;
+    --muted:#8C867D;
+    --line:#EAE6DF;
+    --line-2:#F2EFE9;
+    --green:#6E9B7A;
+    --green-soft:#EDF4EF;
+    --pink:#D98A96;
+    --pink-soft:#FBF0F1;
+    --sand:#E8DFCE;
+    --sand-soft:#FAF6EE;
+    --amber:#C99A4B;
+    --amber-soft:#FBF4E7;
+    --slate:#7B8CA0;
+    --slate-soft:#EFF2F5;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px;
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:920px;margin:0 auto;padding:0 28px 120px;}
+
+  header{padding:84px 0 48px;border-bottom:1px solid var(--line);}
+  .kicker{
+    font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--green);font-weight:600;margin-bottom:18px;
+  }
+  h1{
+    font-size:38px;line-height:1.3;font-weight:650;margin:0 0 18px;
+    letter-spacing:-.01em;
+  }
+  h1 em{font-style:normal;color:var(--green);}
+  .lede{font-size:17px;color:var(--ink-2);max-width:660px;margin:0;}
+  .meta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
+  .chip{
+    font-size:13px;padding:6px 14px;border-radius:999px;
+    background:var(--surface);border:1px solid var(--line);color:var(--ink-2);
+  }
+  .chip.g{background:var(--green-soft);border-color:#DCE9E0;color:#4C7357;}
+  .chip.p{background:var(--pink-soft);border-color:#F2DEE1;color:#B06A76;}
+  .chip.s{background:var(--slate-soft);border-color:#E0E6EC;color:#5E6E80;}
+
+  nav{
+    position:sticky;top:0;z-index:20;
+    background:rgba(253,252,250,.92);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);margin-bottom:8px;
+  }
+  nav .inner{
+    max-width:920px;margin:0 auto;padding:12px 28px;
+    display:flex;gap:4px;overflow-x:auto;
+  }
+  nav a{
+    font-size:13.5px;color:var(--muted);text-decoration:none;
+    padding:5px 11px;border-radius:7px;white-space:nowrap;transition:.16s;
+  }
+  nav a:hover{background:var(--line-2);color:var(--ink);}
+
+  section{padding-top:64px;scroll-margin-top:70px;}
+  h2{
+    font-size:15px;font-weight:650;letter-spacing:.04em;
+    color:var(--green);margin:0 0 6px;
+    display:flex;align-items:baseline;gap:10px;
+  }
+  h2 .num{
+    font-size:12px;color:var(--muted);font-weight:500;
+    letter-spacing:.1em;font-variant-numeric:tabular-nums;
+  }
+  h3{
+    font-size:25px;font-weight:640;margin:0 0 22px;letter-spacing:-.01em;line-height:1.4;
+  }
+  h4{
+    font-size:19px;font-weight:640;margin:38px 0 16px;color:var(--ink);
+  }
+  p{margin:0 0 16px;color:var(--ink-2);}
+  strong{color:var(--ink);font-weight:620;}
+  code{
+    font-family:"SF Mono",ui-monospace,Consolas,monospace;font-size:.9em;
+    background:var(--line-2);padding:2px 6px;border-radius:4px;color:var(--ink);
+  }
+  .en{font-family:"Iowan Old Style",Georgia,"Times New Roman",serif;font-style:italic;color:var(--ink);}
+
+  .oneline{
+    background:var(--surface);border:1px solid var(--line);
+    border-left:3px solid var(--green);
+    border-radius:10px;padding:20px 24px;margin:0 0 26px;
+  }
+  .oneline .lb{
+    font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:10px;font-weight:600;
+  }
+  .oneline p{margin:0 0 10px;color:var(--ink);}
+  .oneline p:last-child{margin:0;}
+
+  .grid{display:grid;gap:14px;margin:24px 0;}
+  .g2{grid-template-columns:repeat(2,1fr);}
+  .g3{grid-template-columns:repeat(3,1fr);}
+  @media(max-width:720px){.g2,.g3{grid-template-columns:1fr;}}
+  .card{
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:12px;padding:20px 22px;
+  }
+  .card .t{font-size:15px;font-weight:640;margin:0 0 8px;color:var(--ink);}
+  .card .d{font-size:14.5px;color:var(--ink-2);margin:0;line-height:1.75;}
+  .card.hi{background:var(--green-soft);border-color:#DCE9E0;}
+  .card.hi2{background:var(--pink-soft);border-color:#F2DEE1;}
+  .card.hi3{background:var(--sand-soft);border-color:#EEE6D6;}
+  .card.slate{background:var(--slate-soft);border-color:#E0E6EC;}
+  .tag{
+    display:inline-block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:650;color:var(--green);margin-bottom:10px;
+  }
+  .tag.p{color:var(--pink);}
+  .tag.a{color:var(--amber);}
+  .tag.s{color:var(--slate);}
+
+  table{
+    width:100%;border-collapse:collapse;margin:22px 0;
+    font-size:14.5px;background:var(--surface);
+    border:1px solid var(--line);border-radius:10px;overflow:hidden;
+  }
+  th{
+    text-align:left;font-weight:620;font-size:13px;letter-spacing:.03em;
+    color:var(--muted);padding:13px 16px;background:var(--line-2);
+    border-bottom:1px solid var(--line);
+  }
+  td{padding:14px 16px;border-bottom:1px solid var(--line-2);color:var(--ink-2);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  td strong{color:var(--ink);}
+  .arrow{color:var(--green);font-weight:600;}
+  td.yes{color:#4C7357;}
+  td.no{color:#B06A76;}
+
+  .ex{
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:12px;margin:20px 0;overflow:hidden;
+  }
+  .ex .hd{
+    padding:11px 18px;background:var(--line-2);
+    font-size:12px;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--muted);font-weight:650;border-bottom:1px solid var(--line);
+  }
+  .ex .bd{padding:18px 20px;}
+  .pair{
+    display:grid;grid-template-columns:1fr 1fr;gap:0;
+    border-top:1px solid var(--line-2);
+  }
+  .pair:first-child{border-top:none;}
+  .pair > div{padding:16px 20px;}
+  .pair > div:first-child{border-right:1px solid var(--line-2);}
+  .pair .lb{
+    font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);font-weight:650;margin-bottom:8px;
+  }
+  .pair .before{color:var(--muted);}
+  @media(max-width:720px){
+    .pair{grid-template-columns:1fr;}
+    .pair > div:first-child{border-right:none;border-bottom:1px solid var(--line-2);}
+  }
+  .sent{
+    padding:13px 16px;border-radius:8px;margin:12px 0;font-size:15px;color:var(--ink);
+    line-height:1.8;
+  }
+  .sent.g{background:var(--green-soft);border:1px solid #DCE9E0;}
+  .sent.p{background:var(--pink-soft);border:1px solid #F2DEE1;}
+  .sent.a{background:var(--amber-soft);border:1px solid #F0E2C8;}
+  .sent.s{background:var(--slate-soft);border:1px solid #E0E6EC;}
+  .sent .fn{
+    display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--muted);font-weight:650;margin-bottom:6px;
+  }
+
+  .note{
+    border-radius:10px;padding:16px 20px;margin:20px 0;font-size:14.5px;
+    background:var(--sand-soft);border:1px solid #EEE6D6;color:var(--ink-2);
+  }
+  .note.warn{background:var(--pink-soft);border-color:#F2DEE1;}
+  .note.ok{background:var(--green-soft);border-color:#DCE9E0;}
+  .note .lb{
+    font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    font-weight:650;margin-bottom:7px;color:var(--amber);
+  }
+  .note.warn .lb{color:var(--pink);}
+  .note.ok .lb{color:var(--green);}
+  .note p{margin:0;font-size:14.5px;}
+  .note p + p{margin-top:9px;}
+
+  .steps{margin:22px 0;padding:0;list-style:none;counter-reset:s;}
+  .steps li{
+    position:relative;padding-left:46px;margin-bottom:18px;counter-increment:s;
+  }
+  .steps li::before{
+    content:counter(s);position:absolute;left:0;top:1px;
+    width:28px;height:28px;border-radius:50%;
+    background:var(--green-soft);border:1px solid #DCE9E0;color:#4C7357;
+    font-size:13px;font-weight:650;display:flex;align-items:center;justify-content:center;
+    font-variant-numeric:tabular-nums;
+  }
+  .steps li .st{font-weight:620;color:var(--ink);display:block;margin-bottom:2px;font-size:15.5px;}
+  .steps li .sd{font-size:14.5px;color:var(--ink-2);}
+
+  .check{list-style:none;padding:0;margin:20px 0;}
+  .check li{
+    padding:11px 0 11px 30px;border-bottom:1px solid var(--line-2);
+    font-size:15px;color:var(--ink-2);position:relative;
+  }
+  .check li:last-child{border-bottom:none;}
+  .check li::before{
+    content:"";position:absolute;left:2px;top:19px;width:11px;height:11px;
+    border:1.5px solid var(--pink);border-radius:3px;
+  }
+  .check li b{color:var(--ink);font-weight:620;}
+
+  /* 决策树 */
+  .flow{margin:24px 0;}
+  .flow .q{
+    background:var(--ink);color:#fff;border-radius:10px;padding:14px 20px;
+    font-size:15px;font-weight:600;text-align:center;
+  }
+  .flow .branch{
+    display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;
+  }
+  @media(max-width:720px){.flow .branch{grid-template-columns:1fr;}}
+  .flow .br{
+    border-radius:10px;padding:16px 20px;border:1px solid var(--line);background:var(--surface);
+    position:relative;
+  }
+  .flow .br::before{
+    content:"";position:absolute;top:-14px;left:50%;width:1px;height:14px;background:var(--line);
+  }
+  @media(max-width:720px){.flow .br::before{display:none;}}
+  .flow .br .cond{
+    font-size:13px;font-weight:650;letter-spacing:.03em;margin-bottom:8px;
+  }
+  .flow .br.a .cond{color:var(--green);}
+  .flow .br.b .cond{color:var(--pink);}
+  .flow .br .out{font-size:14.5px;color:var(--ink-2);line-height:1.7;}
+  .flow .br .out b{color:var(--ink);}
+
+  footer{
+    margin-top:80px;padding-top:28px;border-top:1px solid var(--line);
+    font-size:13px;color:var(--muted);line-height:1.8;
+  }
+
+  .masthead{padding:70px 0 30px;border-bottom:1px solid var(--line);}
+  .masthead .k{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:16px;}
+  .masthead h1{font-size:34px;line-height:1.3;font-weight:650;margin:0 0 14px;letter-spacing:-.01em;}
+  .masthead h1 em{font-style:normal;color:var(--green);}
+  .masthead p{font-size:16px;color:var(--ink-2);max-width:680px;margin:0;}
+  .part{padding:46px 0 6px;margin-top:18px;border-top:2px solid var(--ink);scroll-margin-top:70px;}
+  .part .pl{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-bottom:6px;}
+  .part .pt{font-size:26px;font-weight:640;margin:0;letter-spacing:-.01em;}
+  nav .grplabel{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;padding:5px 4px;align-self:center;white-space:nowrap;}
+  nav .sep{width:1px;background:var(--line);align-self:stretch;margin:2px 6px;}
+  hr.soft{border:none;border-top:1px solid var(--line);margin:30px 0;}
+  /* 示例句中文辅助解释 */
+  .cn{
+    font-size:13.5px;line-height:1.75;color:#3F614A;
+    background:rgba(110,155,122,.10);border-left:3px solid var(--green);
+    padding:7px 12px;margin:8px 0 2px;border-radius:0 7px 7px 0;
+  }
+  .cn b{color:#2F4A38;font-weight:650;}
+  .cn::before{content:"中文 · ";font-weight:700;color:var(--green);letter-spacing:.04em;}
+  td .cn{margin:6px 0 0;}
+
+</style>
+</head>
+<body>
+<div class="wrap"><div class="masthead">
+  <div class="k">IELTS Academic Writing · 方法论合集</div>
+  <h1>小作文 + 大作文：<em>一套写作方法论</em></h1>
+  <p>两篇独立提炼的方法论整合于一处。Task 1 讲"信息压缩"，Task 2 讲"指令决定写法"——
+  都遵循同一套底层逻辑：先判断任务性质，再决定每一段该写什么、不该写什么。</p>
+</div></div>
+<nav><div class="inner">
+  <span class="grplabel">Part 1</span><a href="#t1s0">全局定位</a><a href="#t1s1">骨架</a><a href="#t1s2">改写</a><a href="#t1s3">Overview</a><a href="#t1s4">主体段</a><a href="#t1s5">语言引擎</a><a href="#t1s6">评分映射</a><a href="#t1s7">20分钟节奏</a><a href="#t1s8">自查清单</a><span class="sep"></span><span class="grplabel">Part 2</span><a href="#t2s0">指令决定论</a><a href="#t2s1">同题异构</a><a href="#t2s2">Introduction</a><a href="#t2s3">论述引擎</a><a href="#t2s4">Body·观点类</a><a href="#t2s5">Body·问题类</a><a href="#t2s6">Conclusion</a><a href="#t2s7">句式取舍</a><a href="#t2s8">评分映射</a><a href="#t2s9">自查清单</a>
+</div></nav>
+<div class="wrap"><div class="part" id="part1"><div class="pl">Part 1</div><h2 class="pt">学术类 Writing Task 1 · 小作文</h2></div>
+
+
+
+
+<div class="wrap" data-page-node-id="0tmSS8xrOgNBoSEODOFZiv">
+
+<header data-page-node-id="oYDAOeK5w0AWz54IXK2ocx">
+  <div class="kicker" data-page-node-id="0HNOxECGTg2FmdFYM5G4h2">IELTS Academic · Writing Task 1</div>
+  <h1 data-page-node-id="LmOF5F5eSDPL4V825LsNik">小作文不是"描述"，<br data-page-node-id="yojjN6g9VEkOGCeY4iM5Lq">是<em data-page-node-id="YOJRWVBJxvXKvGaA9kaH0p">一次有取舍的信息压缩</em></h1>
+  <p class="lede" data-page-node-id="ll6f4XqiD5DkjJ8Ciq47TU">
+    图表、表格、地图、流程图——四类题型共用一套骨架，差别只在主体段。
+    这份方法论把"该写什么"和"该放弃什么"拆成可执行动作。
+  </p>
+  <div class="meta-row" data-page-node-id="cEPJOWr6MsHmxaCj5DUX6R">
+    <span class="chip g" data-page-node-id="3PQznRuNVrdjxSMkEP18qA">20 分钟</span>
+    <span class="chip g" data-page-node-id="ZzdHiOvMDmX0OLzEmC8ZsW">170–200 词</span>
+    <span class="chip" data-page-node-id="0i1gHF4pO0Oep3E92W2CFT">占写作总分 1/3</span>
+    <span class="chip p" data-page-node-id="otFt6wfxUv3B3F0z49QBiJ">无 Overview → 封顶 6.5</span>
+  </div>
+</header>
+
+<!-- ============ 0 ============ -->
+<section id="t1s0" data-page-node-id="Y3r0bEXEsTrXEdaL1iJAyg">
+  <h2 data-page-node-id="02aBkrGNX4UzthnAEnEEqS"><span class="num" data-page-node-id="lWuyGX5Cc8cMNqPAYO0R1R">00</span>全局定位</h2>
+  <h3 data-page-node-id="tj0JwOo0yIUdel4E7DgpZx">先搞清楚你在打一场什么样的仗</h3>
+
+  <p data-page-node-id="FbvC9CUvuG7dDN0jAzNuLs">
+    Task 1 只占写作总分的三分之一，Task 2 占三分之二——但现实里，
+    <strong data-page-node-id="EUi1nRZffd1TDw19BrXYYQ">大量考生的写作分是被 Task 1 拖下去的</strong>。
+    原因不是 Task 1 难，而是它被当成"随便写写的小题"，
+    结果在最容易拿分的地方丢掉了 Task Achievement 和 Coherence 两项的结构分。
+  </p>
+
+  <div class="grid g3" data-page-node-id="kzNXhzFhBjPxc3j5HyzixS">
+    <div class="card" data-page-node-id="SKVSA5iq1QeH5sBwpFvkMJ">
+      <div class="tag" data-page-node-id="bsL5B70Pwt0xPIh9fLOwWj">时间</div>
+      <p class="d" data-page-node-id="SdVZi7mqTc7IJnivhqMxv9">20 分钟。<strong data-page-node-id="VCdmd9yFoKo80gw1rtWgdi">不是 15 分钟，也不是 30 分钟。</strong>超时直接挤压 Task 2，是净亏损。</p>
+    </div>
+    <div class="card" data-page-node-id="ZwVegEPYujoo8EJyv6YyFO">
+      <div class="tag" data-page-node-id="e6o4gZ7sTnXqNUZJHJnKSB">字数</div>
+      <p class="d" data-page-node-id="SVtcAcTEsSzcUO2X6Rv8zD">官方下限 150 词。实操写 <strong data-page-node-id="Yokzjk2Y2ZT6wd2FWqTzMu">170–200 词</strong>：够展开两个主体段，又不至于失控。</p>
+    </div>
+    <div class="card" data-page-node-id="1p75YAzR4wYsq3euPWZDuT">
+      <div class="tag" data-page-node-id="fc6H9cvEseda2BLHYIYQdT">题型</div>
+      <p class="d" data-page-node-id="WJjj3xBCTfvrvE594e43l9">数据类（图/表）、<strong data-page-node-id="4Ul4m9GV7YepdKJQvbbufM">变化类</strong>（地图）、<strong data-page-node-id="FGkwQbiGs1Dsd6SE7NM6rY">过程类</strong>（流程图）。三类各有一套写法。</p>
+    </div>
+  </div>
+
+  <div class="note ok" data-page-node-id="Et0dMeMkJWN1rjqOal6k8f">
+    <div class="lb" data-page-node-id="gBSXGCaxQmjOJIeZ9L92El">核心认知</div>
+    <p data-page-node-id="LaKHjWLd3aCdZDpW1JoTxm">Task 1 不考你"看出多少信息"，考你<strong data-page-node-id="pbaf7HM0TZILijDIRYV7Kx">能不能在 20 分钟内做出正确的取舍</strong>。
+    少写一条数据是失误，多写三条数据是更大的失误——因为那意味着你没有判断什么是主要的。</p>
+  </div>
+</section>
+
+<!-- ============ 1 ============ -->
+<section id="t1s1" data-page-node-id="Y6uOaA1LINQHUmKdO9OK3j">
+  <h2 data-page-node-id="Zqgr320qCNOypDxm43yEBb"><span class="num" data-page-node-id="YfvMLKmTw8lOoFEqgNFKuM">01</span>骨架</h2>
+  <h3 data-page-node-id="EiAAi29K5iOY1RjTFdsrHi">四段式：所有题型通用</h3>
+
+  <div class="oneline" data-page-node-id="erYd7A4NE03F3SGsods0i8">
+    <div class="lb" data-page-node-id="8BzKzwACCoGkPhdCjbwFN6">一句话版本</div>
+    <p data-page-node-id="QLoAXT0voaFroLCJDXvcgF"><strong data-page-node-id="gq6lmrcOcdSkiQDK8xCiPD">① 改写题目 → ② 给整体判断 → ③ 分组展开细节 → ④ 分组展开细节</strong></p>
+    <p data-page-node-id="9JEEbIBi1HzHwClb0DK0n2">前两段决定上限，后两段决定下限。</p>
+  </div>
+
+  <table data-page-node-id="pWoJVXO74FeZIho1NqkbPx">
+    <thead data-page-node-id="hD8iTKNImgkEDgOUJGNYxB"><tr data-page-node-id="hgESLpvOYuInrDgpIyerMA"><th style="width:130px" data-page-node-id="VlOUNymGBjLJCkvxgIoCpd">段落</th><th style="width:120px" data-page-node-id="EpEN0T2Ts1nWVdYMdQLRsG">篇幅</th><th data-page-node-id="C2oeLFIiJw5vFw39EWExFa">唯一任务</th></tr></thead>
+    <tbody data-page-node-id="G1wxgtbKSMmA5BstJvNfBD">
+      <tr data-page-node-id="FluL5XircVgNT6FHyJv2nP">
+        <td data-page-node-id="y7KYDPgOEBLnIyUOa5Zc30"><strong data-page-node-id="omLe8NTIcUwnGTdPhW8aFp">Introduction</strong></td>
+        <td data-page-node-id="5fetyxiqrc6qfyuxXdxiFr">1–2 句</td>
+        <td data-page-node-id="wiCSEFUBaagxhmlvxPamUg">把题目<strong data-page-node-id="T5hnDFOElNuUtrNkxYevhj">换个说法</strong>再说一遍。快速、高效，不停留。</td>
+      </tr>
+      <tr data-page-node-id="1LaDtN5bOFlEVMhJYk1pAL">
+        <td data-page-node-id="O236hjr5ccIdH8SgA8V5bo"><strong data-page-node-id="OlhNmRbuuDS2u0I05LMjww">Overview</strong></td>
+        <td data-page-node-id="bPATV4WtPMtrVNA0CXDEOl">2–3 句</td>
+        <td data-page-node-id="kE4idM5BtjPwFILAoFYn5r">回答"整体上看，这图在讲什么"。<strong data-page-node-id="hA8VVRaleJ3iwTx25L9Yt7">这是全篇最值钱的一段。</strong></td>
+      </tr>
+      <tr data-page-node-id="ThmjSKlgk2tuhE6dVGJWv1">
+        <td data-page-node-id="VEL0ak5TKHE7hICnPKk3DQ"><strong data-page-node-id="1PGby4DCQcaGFHKEEEpRdY">Body 1</strong></td>
+        <td data-page-node-id="xq37FpWkSQH9b1dDbGqbjF">3–5 句</td>
+        <td data-page-node-id="g5UvjvIW0rW8wiIVmjjnj4">第一个分组的关键特征，带数据支撑。</td>
+      </tr>
+      <tr data-page-node-id="53vsWJYc7f634YzU66up55">
+        <td data-page-node-id="DiAzT7xBEpZf2s8i3nLvtt"><strong data-page-node-id="ufaHAJJMMVEt6KnLNG9pmA">Body 2</strong></td>
+        <td data-page-node-id="oPPLfdxuy7CS7FA8CgKhV4">3–5 句</td>
+        <td data-page-node-id="VnrOLwMxzHX3NDIE9P5J8t">第二个分组，并且<strong data-page-node-id="QAX5nt2Uo9mBKNyBtZPNEY">必须和 Body 1 建立关联</strong>。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="note" data-page-node-id="YjH7LEv0QG5bhLI0WzrFLv">
+    <div class="lb" data-page-node-id="AGhq20bfmGvY06YSaXz83C">为什么是"分组"</div>
+    <p data-page-node-id="ivUytnNCqC2kYitlGqfIDs">主体段不能按"从上到下抄一遍数据"来切，必须按<strong data-page-node-id="PSBdAeKKli7pp6vQF0Hhu1">逻辑维度</strong>切：
+    柱状图 vs 表格、2000 年 vs 现在、流程前半段 vs 后半段。
+    一段一个中心，这是 Coherence &amp; Cohesion 的评分依据。</p>
+  </div>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="t1s2" data-page-node-id="63xiyUtCTZ4Kh5NMQEl2tP">
+  <h2 data-page-node-id="GiWQZBAHNlWYEHK9eLFFiJ"><span class="num" data-page-node-id="YWE9P4AuBDfNcZCYJSPaIF">02</span>Introduction</h2>
+  <h3 data-page-node-id="GW2xwL8FalwnQBenTgKkmp">改写的三个杠杆：换词 · 换结构 · 换时态</h3>
+
+  <p data-page-node-id="kuOHDCcSC6WzrN0Ni7hWx6">
+    开头最稳、最省时的做法就是<strong data-page-node-id="XlfgOchOQqKC6Wp3LKIMuH">把题目用自己的话复述一遍</strong>。
+    注意"复述"不是"同义词替换"——只换词不换结构，考官一眼看穿。
+    真正的改写同时动三个地方：
+  </p>
+
+  <div class="grid g3" data-page-node-id="ClLtujO2XtAxt4lGNjdMDR">
+    <div class="card hi" data-page-node-id="G61Xg9NZLpL8kz9loZPC7H">
+      <div class="tag" data-page-node-id="FsLmLnRfhynVmgfJZJLdfd">杠杆一 · 换词</div>
+      <p class="d" data-page-node-id="EJkT3kPR7iwfBeNDYpOGSS">show → illustrate / depict<br data-page-node-id="0YRoS7cBDCNUikPndQTae0">information → data<br data-page-node-id="wdQs1up4QvHvaKyJBpuhNJ">international students → overseas students</p>
+    </div>
+    <div class="card hi" data-page-node-id="YbyNAFqc1nOjcjBn515m2p">
+      <div class="tag" data-page-node-id="OAzm1ufPGnJJm6Uv0B7YaG">杠杆二 · 换结构</div>
+      <p class="d" data-page-node-id="zClzNasFZJucaZpYfQDS2n">名词短语 <span class="arrow" data-page-node-id="sq3GvpCIFtXtfgCnywsR0A">→</span> 从句<br data-page-node-id="STrLd6IzkdoDhxoihdeHCr">简单句 <span class="arrow" data-page-node-id="yDxhOhDhSGLWOalgHjRtIC">→</span> <span class="en" data-page-node-id="05EwmcMhYLY1trMvWWYA49">how / what</span> 引导的名词性从句</p>
+    </div>
+    <div class="card hi" data-page-node-id="PU2ZH4m2CCSxFoVFj8mBcJ">
+      <div class="tag" data-page-node-id="ohWrVd5UXAjfmEKJXSiYuF">杠杆三 · 换时态</div>
+      <p class="d" data-page-node-id="h8LMLo1niRe08C2Ie3YDAu">把时间表达折叠进时态里，一句话省掉半句。</p>
+    </div>
+  </div>
+
+  <p data-page-node-id="eJWXj3GPW8iB5BZutLYpSt"><strong data-page-node-id="TUrSYr9og5uVCTyEVKs7ms">杠杆三是最容易被忽略、也最见功力的一个。</strong>看这个例子：</p>
+
+  <div class="ex" data-page-node-id="Tz7IPnYsvEKywJ6VyzPgdO">
+    <div class="hd" data-page-node-id="XmyUMv8GoS7MM3oHNylYpD">案例 A · 地图题改写</div>
+    <div class="bd" data-page-node-id="4J7OOx325Mdac9ReB1vnvi">
+      <div class="pair" data-page-node-id="znmdlC9an6Qv2jVk0DoJTF">
+        <div data-page-node-id="BlDCJOCDaLTVUSiOBAHwST">
+          <div class="lb" data-page-node-id="HnWdj2QeVDWWYG7dGsrs8u">原题</div>
+          <p class="before" data-page-node-id="teTcM7EFG6bp8CAouvIdXg">The plans below show the harbour of P in 2000 and how it looks now.</p><p class="cn" data-page-node-id="cn1">下面的平面图展示了 P 港在 2000 年的样貌，以及它现在的样貌。</p>
+        </div>
+        <div data-page-node-id="EsncMD0Qa9O4ELvDFbs9Hp">
+          <div class="lb" data-page-node-id="eJ1tc2qvtVtGL35XMgCbaJ">改写后</div>
+          <p data-page-node-id="uYPfL22LViscvAYOt6gzRy">The two plans illustrate <strong data-page-node-id="TQuJqBBj7GWIwlJsDtwwSr">how</strong> P harbour <strong data-page-node-id="46qdI3sqo9LCLNVolw4B5T">has changed since 2000</strong>.</p><p class="cn" data-page-node-id="cn2">这两张平面图说明了 P 港自 2000 年以来发生了怎样的变化。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p data-page-node-id="zI9SwGtsGsevMUHnssCaP3">
+    这一改做了三件事：<code data-page-node-id="ZBmAvTyg3HvUwPAzlUrxAZ">show</code> → <code data-page-node-id="erg7f1HFFlDaDawE6iZ86J">illustrate</code>；
+    把 <em data-page-node-id="UvDlwZlx2qqZAPzOAxdexr">in 2000 … and now</em> 这个并列结构折成了 <em data-page-node-id="FidLoFy1LmfwOl7CltG9vP">how … has changed since 2000</em> 一个从句；
+    更重要的是——<strong data-page-node-id="k6SN0eLIR5hhUcrRxVA0m7">时态被"逼"成了现在完成时</strong>。
+    现在完成时正是"从过去某点持续到现在的变化"的标准时态，一句话就把整篇文章的时态基调定下来了。
+  </p>
+
+  <div class="ex" data-page-node-id="sGqG5B0oW8EEEQcDh60Hba">
+    <div class="hd" data-page-node-id="ugNPKxfPV744UspUopRlBI">案例 B · 柱状图 + 表格混合题改写</div>
+    <div class="bd" data-page-node-id="sBBccVbTLNF94ZU0IXkbhB">
+      <div class="pair" data-page-node-id="GEzgLWKN3GNKl4rfuKiGPP">
+        <div data-page-node-id="YziVVPa9ZQ9G4VsgFeu3Mi">
+          <div class="lb" data-page-node-id="5kERh0mdgc2EH93V2CqDJA">原题</div>
+          <p class="before" data-page-node-id="X2Mlti9T1lWPNIvzm0Ep20">… the average salary of science and law graduates five years after graduating … The table provides information about annual tuition fees for international students studying these subjects.</p><p class="cn" data-page-node-id="cn3">理科与法律专业毕业生毕业五年后的平均薪资……表格提供这些学科国际学生的年度学费信息。</p>
+        </div>
+        <div data-page-node-id="2ZDL8Kr8yZnOW67SCzrcAe">
+          <div class="lb" data-page-node-id="bYUJA27OS7frFuTeDwB2L2">改写后</div>
+          <p data-page-node-id="XDgvpoUFvQqLZGU9h2Py2Y">The bar chart shows average <strong data-page-node-id="NczR34pUTLViEJKSJO2PXu">earnings</strong> … five years after <strong data-page-node-id="ktbWynBK0PHYlACqHQDWgD">completing their degrees</strong>. The table <strong data-page-node-id="rxpGJ97IA1noc52xTtYcVs">presents data on</strong> fees paid by <strong data-page-node-id="D1XfFBoN5giyOhBFHYWl3C">overseas students currently enrolled in</strong> these two courses.</p><p class="cn" data-page-node-id="cn4">柱状图显示了（两专业）毕业五年后的平均收入……表格呈现了目前正在这两门课程就读的海外学生所缴费用的数据。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table data-page-node-id="YqNeuPK93DUgDcuvWUDisF">
+    <thead data-page-node-id="7MCW2ieTzhajcilPnugu1Y"><tr data-page-node-id="53bsOCpv6FGG9jFyPbGoHR"><th style="width:220px" data-page-node-id="tRSCXxhoZwMckKtwDooyby">原题用词</th><th style="width:60px" data-page-node-id="vjeM9DxfDsqcPzLemBHGum"></th><th data-page-node-id="0GzneL5x6eri48GBt11MJa">改写方向</th></tr></thead>
+    <tbody data-page-node-id="iHQxt00btE2qKrQHwSZP3K">
+      <tr data-page-node-id="rTsWaT6YGvrzq0pvDIfkyo"><td data-page-node-id="zjB8Lpl26U5Knjz71QY6ES">average salary</td><td class="arrow" data-page-node-id="7QhqXIivjckdf1vJYgbQrS">→</td><td data-page-node-id="5Ew5DjHDJAysJogUCcDz6e">average earnings</td></tr>
+      <tr data-page-node-id="NA8rRRy1hKfO2yWJaqeg0k"><td data-page-node-id="ApeEAi8mui1kC4cN9BpBRB">five years after graduating</td><td class="arrow" data-page-node-id="vE2aYyl3LwPy9JVxEO453z">→</td><td data-page-node-id="thYdtVFM6bUWorVyD29fxl">five years after completing their degrees</td></tr>
+      <tr data-page-node-id="iEJIGsGAdGa85IIweXlRr9"><td data-page-node-id="Spss8hYbXmSbYPaTkuZHDv">provides information about</td><td class="arrow" data-page-node-id="3VwF8WBpEzMN9ISV4Jwqcz">→</td><td data-page-node-id="fx1Lr0QuFN3jXLCv2ORT0j">presents data on</td></tr>
+      <tr data-page-node-id="91DNg0q41YsIkBmRleo7BC"><td data-page-node-id="imcfVdtqxyJZhH9wM0ZVam">international students</td><td class="arrow" data-page-node-id="H7lCKlwliHSHEAowAbud3c">→</td><td data-page-node-id="VTPdr6GeVCAs2z1BT4CfOH">overseas students</td></tr>
+      <tr data-page-node-id="wSrEWltbhD0tQ0vq1YaZKR"><td data-page-node-id="qKF2ENl8bKxEGHJaAjtRpy">studying these subjects</td><td class="arrow" data-page-node-id="MYm2hCACqFY2GgNTvidPiI">→</td><td data-page-node-id="mfXpdOElTu7KY8UA5q5epy">currently enrolled in these two courses</td></tr>
+      <tr data-page-node-id="N7jYNjkKC5WK6lTYfkDZuE"><td data-page-node-id="I9DIq83E8x3xORWKLMty0x">university</td><td class="arrow" data-page-node-id="QsSmdT5B4iw2dH7K6MdTHS">→</td><td data-page-node-id="3SWfmsJt1T3RlPfAlCoOzH">the same institution / higher education institution</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note warn" data-page-node-id="5xjpX8zYn39zkC73MZFjVE">
+    <div class="lb" data-page-node-id="fRGogXX2HCHEDMbhXksSbt">两条硬红线</div>
+    <p data-page-node-id="6r9vmoPnqLFRaia8GgC6Hf"><strong data-page-node-id="g4ATtfRt1LCnHZqSMvTS57">① 绝不原样抄题。</strong>开头直接复制题干，是明确的扣分动作。</p>
+    <p data-page-node-id="fogm8NfrXFbKD42Ac903s0"><strong data-page-node-id="SkMBUJoIAq9MXSIVEAQlEU">② 不要为了炫技而改写。</strong>自创生僻表达、把简单意思绕成复杂句，只会同时拉低 Lexical 和 Grammar 两项评分。改写要"够用就好"。</p>
+  </div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="t1s3" data-page-node-id="gBEUEpYyllLExwze9emZFC">
+  <h2 data-page-node-id="uutQY8fI4nUetyaIE09gqX"><span class="num" data-page-node-id="VFW4Hn6Qp2daW7Eg4FYD4P">03</span>Overview</h2>
+  <h3 data-page-node-id="hfXYEnPc9ys4Pvmsrt1ky3">7 分与 6.5 分的分界线，就在这里</h3>
+
+  <p data-page-node-id="muZjHlRPlpy6d7BwNpsQXm">
+    Task Achievement 这项评分标准里有一句明确要求：
+    <span class="en" data-page-node-id="j94YZH3lLLYFeu4oo7k82i">"a clear overview of main trends, differences or stages"</span>。
+    <strong data-page-node-id="m53PhrJAGt9fatigh9h1Of">没有清晰概览，这一项就拿不到 7 档。</strong>
+    这不是玄学，是评分表上白纸黑字写着的。
+  </p>
+
+  <div class="note ok" data-page-node-id="Etha2nihpTABBw7HqE4jnL">
+    <div class="lb" data-page-node-id="wXpjRxOu9iv1XOJmiAAX9g">Overview 的本质</div>
+    <p data-page-node-id="LFTmzSW5PYGiZNDRlFmN8j">一次<strong data-page-node-id="ZVjwEGB7jvhFSR7IxkHyDd">升维</strong>：从"图上有什么"跳到"这些现象合起来说明什么"。
+    主体段负责"是什么"，Overview 负责"所以呢"。</p>
+  </div>
+
+  <h3 style="font-size:19px;margin-top:38px;" data-page-node-id="zujFbaVGjYQGymUctN0HrW">动作一：挑两条，只挑两条</h3>
+  <p data-page-node-id="fwZUrJ7Uqk7FKoR1EsyVxd">
+    Overview 不是"把所有变化列一遍"——那是主体段的事。
+    正确的做法是<strong data-page-node-id="HFaldM0fcrq1lVXhI9cPB7">只选最主要的两条</strong>：
+  </p>
+  <ul class="check" data-page-node-id="krJonXzZkJBRft6nf0E6UQ">
+    <li data-page-node-id="MTUx7t8JwbnyAxGzHY5m44"><b data-page-node-id="zoTyrr2IT1ksnURYZVgqCi">数据类</b>（图/表/混合）→ 找<strong data-page-node-id="Covxt6vi0c9ttFzNkotWfO">趋势、极值、反差</strong></li>
+    <li data-page-node-id="esVmL7UXTNpy8k16993cHF"><b data-page-node-id="XjIqYeLQeGr8IVuyEHpeFy">地图</b> → 找<strong data-page-node-id="iF2wKVQLyfETkKm0pd0HSH">变化的方向性</strong>（整体朝哪个方向发展了）</li>
+    <li data-page-node-id="EH6y4NkjD7klhpKrErZlrT"><b data-page-node-id="UFG6a0pFk3Z5eJRTPTVjE0">流程图</b> → 找<strong data-page-node-id="yC5g6T9KfhsTZ1iA9wKMv7">阶段的划分与循环结构</strong></li>
+  </ul>
+
+  <div class="ex" data-page-node-id="Oy5UQYDiHHdjKmkBwUA25h">
+    <div class="hd" data-page-node-id="THTxoHVWyDvkalUQX78guN">案例 A · 地图题 Overview</div>
+    <div class="bd" data-page-node-id="tncMPCVaIzBcJNOwtlNSzU">
+      <p data-page-node-id="08YPMDqkumH5VpAa7yg0Il"><strong data-page-node-id="FgFTCjuW0XHnNNQBJOtQfM">图面事实：</strong>废弃城堡变成酒店、新增咖啡馆和商店、码头扩建出第二个泊位、私人游艇数量增加、渡轮从 1 条变 2 条。</p>
+      <p style="margin-top:14px;padding:14px 16px;background:var(--green-soft);border-radius:8px;border:1px solid #DCE9E0;" data-page-node-id="JjzpFw2wfWOa5xS69vm4HU">
+        <strong data-page-node-id="DqlfbcS4XZHvRAUzp1Y50l">Overall</strong>, P harbour has become considerably more developed and <strong data-page-node-id="OlZjYwZW70ACT8ifCz7bb4">tourism-oriented</strong>, with new facilities added and existing ones expanded, such as the hotel, cafés, shops and a larger marina.
+      </p><p class="cn" data-page-node-id="cn5">总体而言，P 港已明显更发达、更偏向旅游导向，新增了设施、扩建了原有设施，如酒店、咖啡馆、商店和更大的游艇码头。</p>
+      <p style="margin-top:14px;font-size:14.5px;color:var(--ink-2);" data-page-node-id="k7VRxOwvHydCzgNhbWfK0H">
+        注意 <em data-page-node-id="kwt1DoxZGa5YX940ziDdKv">tourism-oriented</em> 这个词：<strong data-page-node-id="4cB8guq2nT1ZqRUNsO5bt0">图上没有写"旅游"，但它把所有新增设施归拢到了一个性质上。</strong>
+        这一步叫"归纳"，是 Overview 的核心动作。
+      </p>
+    </div>
+  </div>
+
+  <div class="ex" data-page-node-id="FUGet2abX5zz40ThdYqcyl">
+    <div class="hd" data-page-node-id="Egc6ZIu1bnLKGDozbF02o2">案例 B · 柱状图 + 表格 Overview</div>
+    <div class="bd" data-page-node-id="QXBn6lqWshZm8RG2kPP3hG">
+      <p style="padding:14px 16px;background:var(--green-soft);border-radius:8px;border:1px solid #DCE9E0;" data-page-node-id="zCVDSc9QmgYleYLACGskEs">
+        <strong data-page-node-id="mjzsvFYNtVViz36rMQKDrl">Overall</strong>, two main trends can be observed. Firstly, universities charging higher tuition fees tend to produce graduates with higher salaries five years later. Secondly, although science students at all three universities pay more in fees, law graduates earn more.
+      </p><p class="cn" data-page-node-id="cn6">总体而言，可观察到两条主要趋势：第一，学费越高的大学，其毕业生五年后薪资往往越高；第二，尽管三所大学的理科生缴费更多，法律毕业生收入却更高。</p>
+      <p style="margin-top:14px;font-size:14.5px;color:var(--ink-2);" data-page-node-id="0silSa1ghknkwI4b6ImlZH">
+        两条趋势交叉了<strong data-page-node-id="XiplpYTUJf0qlgAq6jYGIT">两个数据源</strong>（学费 × 薪资）：一条讲跨源关联，一条讲组内反差。
+        混合题的 Overview 必须同时覆盖两个数据源，否则算不完整。
+      </p>
+    </div>
+  </div>
+
+  <h3 style="font-size:19px;margin-top:38px;" data-page-node-id="uXTA5AsaLMf8D70tgaPU6Z">动作二：推断可以，但要有边界</h3>
+  <p data-page-node-id="Pf2XVK2Nja7ObbUceip1dG">
+    很多考生怕"过度推断"，于是 Overview 退化成"又列了一遍数据"——这是另一种失分。
+    <strong data-page-node-id="fXGrm52Bk8Pjn6fJGn1e5k">正确姿势是：允许归纳，禁止外推。</strong>
+  </p>
+
+  <table data-page-node-id="KvykoXxl3nNawhgMZEYYc9">
+    <thead data-page-node-id="lAUI6bzeGp2isIvlfVOagb"><tr data-page-node-id="IjhAjJRtFIZuv8oHLh4QEE"><th style="width:50%" data-page-node-id="mSGSFicLZl5HVqAE04e0yk">✅ 可以做：图面可支撑的归纳</th><th data-page-node-id="oninT99EPZX5G8Loy38Vg7">❌ 不能做：引入外部信息</th></tr></thead>
+    <tbody data-page-node-id="UsQu6osTOrA44nuOiGL3HZ">
+      <tr data-page-node-id="cgs8xTGTG7DaX1o8ESUiW7">
+        <td data-page-node-id="pEQnEMsAnpsVNc2JuBrDAB">看到酒店、咖啡馆、商店、游艇泊位 → "更旅游导向"</td>
+        <td data-page-node-id="boNYJd5UHfPZz5p5EUgjzr">"因为渔业衰退，当地政府投入资源转型……"</td>
+      </tr>
+      <tr data-page-node-id="7087QdL3nkHa2z602EE5mD">
+        <td data-page-node-id="hjfyibpfifTEEbBuPEMqnJ">学费高的学校毕业生薪资也高 → "两者呈正相关"</td>
+        <td data-page-node-id="HtBiDjfGFmQzKElCPFMcKh">"这对当地居民是好事，虽然可能有人反对"</td>
+      </tr>
+      <tr data-page-node-id="AHBE6eMKkr5napRMEvm2VN">
+        <td data-page-node-id="kGJnmxsnxmvNAYnBhu8Hhm">流程首尾相连 → "这是一个闭环/循环系统"</td>
+        <td data-page-node-id="i5Mecsya9N2ZHrqqY1Ojto">"这项技术有望解决能源危机"</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="note warn" data-page-node-id="MDJkoYU9EiHHGknZVVFz52">
+    <div class="lb" data-page-node-id="haJe2QWcR3Zfc2qIHH6N0A">一句话判断标准</div>
+    <p data-page-node-id="CA50zALh4qtqXuULivr6AN">你写的这句话，<strong data-page-node-id="wVOea38fPuQHfSYX62bxPa">能不能被图上直接看到的东西支撑住？</strong>
+    能 → 是归纳，加分；需要图外的背景知识才成立 → 是外推，扣分。
+    不用怕"面向游客"这类归纳词，怕的是"政府投资""渔业衰退"这类凭空的因果。</p>
+  </div>
+
+  <div class="note" data-page-node-id="yrDibvyzVbwdnE3Zrdv0k5">
+    <div class="lb" data-page-node-id="Ifs2VuostoMdkrh13QDzjf">格式小技巧</div>
+    <p data-page-node-id="ybUURFRu1mpSxYCwEcEOiZ">用 <code data-page-node-id="Kz6N5bdYymLs2IeCRYdewv">Overall</code> / <code data-page-node-id="9jzXxt6X1FOQyV42pS4TAp">Overall speaking</code> 开头。
+    这是一个<strong data-page-node-id="9CG7QGmfICZFQeHT9Ba213">给考官的信号标记</strong>，让他一眼确认"这一段是 Overview"，避免被误读成又一个主体段。
+    成本为零，收益明确。</p>
+  </div>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="t1s4" data-page-node-id="b0RVBs8vE60s6ahaTrYzXa">
+  <h2 data-page-node-id="GXOmlxxGw8b8Krkj7VRPIt"><span class="num" data-page-node-id="2hOsmVlpAyViyWhWXQ8kgs">04</span>主体段 · 三岔路</h2>
+  <h3 data-page-node-id="U2gvd0gCaQ3EzXUzlXGveO">题型不同，写法不同——但套路是固定的</h3>
+
+  <div class="grid g3" data-page-node-id="0CQUFiOYVI2oktQmEYIdZe">
+    <div class="card hi3" data-page-node-id="fljKDJ4iOACN7g16E2yvO3">
+      <div class="tag a" data-page-node-id="b6C3kqHp8ZKNEDD18lVTFe">A · 数据类</div>
+      <p class="d" data-page-node-id="GABKhIATLHArDhDv3p4oEL">柱状图 / 折线 / 饼图 / 表格<br data-page-node-id="z1nNNSWFJtSblUj5B8l7XJ"><strong data-page-node-id="tsUqo83VGrrT8OXpH0BJbh">核心动作：描述 + 比较</strong></p>
+    </div>
+    <div class="card hi3" data-page-node-id="mlt3gyLZTZfme1wpxb0kMw">
+      <div class="tag a" data-page-node-id="BsBFYnwnEVlT2VkSzkNHVy">B · 变化类</div>
+      <p class="d" data-page-node-id="ZyFVh4NGgJPnJQrBVrgSCK">地图 / 布局对比<br data-page-node-id="0HKVspNpe32GM8IYAvGHXw"><strong data-page-node-id="7ALztvlJWyj1ENVaTlsoXq">核心动作：定位 + 被动</strong></p>
+    </div>
+    <div class="card hi3" data-page-node-id="Dlz6czniMs6BojYOeyZ0Rl">
+      <div class="tag a" data-page-node-id="RK5EQ1oFl6dDXWWCGf4iYa">C · 过程类</div>
+      <p class="d" data-page-node-id="Wta1zGHfZG9NmJXGwNJZLo">流程图 / 生命周期<br data-page-node-id="ufvCytF0DLWQtuIZ19NtZM"><strong data-page-node-id="VvuX3QLQfvP7xeYk552wsf">核心动作：逐步 + 换动词</strong></p>
+    </div>
+  </div>
+
+  <!-- A -->
+  <div style="margin-top:44px;" data-page-node-id="vAh9Lc16rFhVoOTYSoaB1t">
+    <h3 style="font-size:21px;" data-page-node-id="FxI9hkFi6uPKfjNsDBH4b3">A · 数据类（图 / 表 / 混合）</h3>
+
+    <div class="steps" data-page-node-id="inpVt804p4JUHUmrg8tsxD">
+      <li data-page-node-id="4jNERDE6R8vZciM2qHi3Ad"><span class="st" data-page-node-id="aGhxN3zScx4F2UVo4OHTSJ">先定分组逻辑</span>
+        <span class="sd" data-page-node-id="79mxuRnijxXCvE5tyU0hna">混合题最自然的切法是：<strong data-page-node-id="p8AJKO5Ir3f99RFR2dg99E">一段管图、一段管表</strong>。不要按"第一组数据/第二组数据"这种无意义的顺序切。</span></li>
+      <li data-page-node-id="OGFrkqigeR9NcCXWEqsAaG"><span class="st" data-page-node-id="2LbpaQfwvxxCPX0kNZ70XD">数字必须带"定位词"</span>
+        <span class="sd" data-page-node-id="mQ8PcrQiVPeuS4on7KU7zn">不能只报数字。每个数据点要说明它的<strong data-page-node-id="Ttbf6TQpMNANHS9HvK9jvx">相对位置</strong>：最高 / 最低 / 次之 / 反超 / 差距约多少。这是 "compare" 的要求。</span></li>
+      <li data-page-node-id="hzA4FtpNQp7bGdxLJKwOda"><span class="st" data-page-node-id="6seeJDHWTJ11Eyyj7DWNzr">句式强制变化</span>
+        <span class="sd" data-page-node-id="twNpw7wzIlR0eJCwh3XwcL">三所大学用三种句型。全篇一个句式是 Grammar 项的<strong data-page-node-id="okOezYwytuB5oRifPEr5zr">常见死法</strong>。</span></li>
+      <li data-page-node-id="dGA4F2EcW5cCT3fdI1BTlc"><span class="st" data-page-node-id="Lyi1xvxZLisurmA2IqIaOM">段尾回扣 Overview</span>
+        <span class="sd" data-page-node-id="0r23CpxR6q1FoYOAX9SQIk">用一个总结句把本段细节<strong data-page-node-id="8P9nbkAtDjXKautdp9AQFr">收束回</strong>概览里的某条趋势，形成闭环。</span></li>
+      <li data-page-node-id="1RPKeWmBRQnQGBwcOnKW86"><span class="st" data-page-node-id="mFJQUCeAXwEc7AfFOvxb0O">段间建立关联</span>
+        <span class="sd" data-page-node-id="o1eyA9suXJL11QdZ9TIAqO">混合题最容易漏的一步：写完图直接写表，两者毫无关联。
+        必须在第二段里<strong data-page-node-id="Y1FvEcyfT3wp4ln3SGRwfL">明说</strong>"学费更高的学校，毕业生薪资也更高"这类跨源结论。</span></li>
+    </div>
+
+    <div class="ex" data-page-node-id="o73WYniKPQpD4A2Fhmgv2c">
+      <div class="hd" data-page-node-id="QlWQeo2v1OTowldXnGefOL">示范 · 三句三种句型</div>
+      <div class="bd" data-page-node-id="wO0b3iX1bIOX3nHeWNzp7z">
+        <p data-page-node-id="plL9Pjy2mQwrBOqN5d3kgE"><strong data-page-node-id="wa7zpbxH740etMvkw5vo6G">① 极值先行：</strong>Not the university with the highest salaries overall, law graduates earn around £47,000 a year, compared with approximately £43,000 for science graduates.</p><p class="cn" data-page-node-id="cn7">（极值先行）整体薪资并非最高的那所大学，其法律毕业生年薪约 4.7 万英镑，理科生约 4.3 万。</p>
+        <p data-page-node-id="9w5TiZAIuMJHEccrCgjKIs"><strong data-page-node-id="EiB3kHJkXhgAKq0R60MfpA">② 换主语：</strong>Next comes Russo University, where law graduates earn about £45,000 and science graduates around £40,000.</p><p class="cn" data-page-node-id="cn8">（换主语）接下来是 Russo 大学，其法律毕业生约 4.5 万、理科生约 4 万。</p>
+        <p data-page-node-id="e0cvnZS4Ma7Syjv3xGq5SD"><strong data-page-node-id="EL5BPG2WZrpo5sNbKdAlze">③ 换动词 + 副词压缩：</strong>It is reported that West Anglia has the lowest earnings for both groups, at £40,000 and £36,000 <strong data-page-node-id="2eVaRGbJH9LAMCF4j42ftN">respectively</strong>.</p><p class="cn" data-page-node-id="cn9">（换动词+副词压缩）据报道，West Anglia 两组收入都最低，分别为 4 万和 3.6 万。</p>
+        <p style="margin-top:14px;padding:13px 16px;background:var(--amber-soft);border-radius:8px;border:1px solid #F0E2C8;font-size:14.5px;" data-page-node-id="IZxSM2BlcpxKV4XGPvcx30">
+          <code data-page-node-id="B2EiXMMPJY879vefWcJ3KK">respectively</code> = "按前文提到的顺序依次对应"。一个词省掉半句话，
+          是数据类小作文的<strong data-page-node-id="CfoJCUHUs6QlGH4YFsyVMP">性价比最高的副词</strong>。
+        </p>
+        <p style="margin-top:14px;" data-page-node-id="fNRjX09Nlrjws4xppF4vsn"><strong data-page-node-id="tjAEEz2Qs4ZNSpvFjIGkub">④ 收束回扣：</strong>In all cases, law graduates earned considerably more than their science counterparts, by a <strong data-page-node-id="PZuf4Q38MrovUwBipMmfuT">margin of £4,000 to £5,000</strong>.</p><p class="cn" data-page-node-id="cn10">（收束回扣）在所有情况下，法律毕业生都比理科生高出约 4000–5000 英镑。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- B -->
+  <div style="margin-top:48px;" data-page-node-id="CfAtbvNiB1C7bUKYEpF8ju">
+    <h3 style="font-size:21px;" data-page-node-id="XdrW9aK7bMECvyWuxXFHU0">B · 变化类（地图）</h3>
+
+    <p data-page-node-id="BOJ2aqGdxjNvM4Qe3Qr5H4">地图题的本质是<strong data-page-node-id="BdWCT3Z79LUVR2cMvoDWGA">两段状态 + 一个变化</strong>。最简单的切法：</p>
+    <ul class="check" data-page-node-id="Xn8uxVCu7FPHISm7bDBY1H">
+      <li data-page-node-id="fcfdo4qGFCCyzaBm5Nll2s"><b data-page-node-id="UZYDFN98cGAtC0FQPbbkMq">Body 1</b> 写"原来是什么样"（基准状态）</li>
+      <li data-page-node-id="bahyoVQcxfPoidrZEeS9X3"><b data-page-node-id="PT6RCHkFm6SvegsPNq2xBM">Body 2</b> 写"现在是什么样 + 具体变了什么"</li>
+    </ul>
+
+    <table data-page-node-id="xSdOTDynlrfd8Xej0Dy906">
+      <thead data-page-node-id="v2xfqGovJ0GvwbVKdlNBKW"><tr data-page-node-id="7A1uZsF4ePsFfvnOTDawB1"><th style="width:150px" data-page-node-id="m37AFSHkI1MRhfo12kcMEH">技术点</th><th data-page-node-id="s9bpPCrnVKHASemPY5ivcd">做法</th></tr></thead>
+      <tbody data-page-node-id="BtfQlDB1EcOwGlDL1v66h2">
+        <tr data-page-node-id="a9pBKtP8dp7jTMz4yci9Nf">
+          <td data-page-node-id="RP4FbzJMqQasUdNaVBriP1"><strong data-page-node-id="ui09wyTUhUI51TtxiOkUer">时态</strong></td>
+          <td data-page-node-id="JycTPWp9wQhNphN6PoteRZ">现在完成时（<em data-page-node-id="X8PVJKcO69hky35H0icM5u">has changed since 2000</em>）——从过去持续到现在的变化。</td>
+        </tr>
+        <tr data-page-node-id="rsckbvPhVGsh869NNnpZWM">
+          <td data-page-node-id="WThQBT8xFcdGNClS28DMTd"><strong data-page-node-id="LRUQOQELG2fyajbmSSUSi0">语态</strong></td>
+          <td data-page-node-id="2wzAvg8QRgvLSdDClvFqex"><strong data-page-node-id="eSRDE1kEWJN4QkoV9GB3nT">以被动为主</strong>：变化是谁做的不知道，也不重要。<br data-page-node-id="LDW9rYJbKGvjiGurgEu7fO">
+          <code data-page-node-id="SMswagwGi0jODP350Kq7VP">has been extended</code> · <code data-page-node-id="H4vMtvQKhxpp4LdVl8CAIy">has been converted into</code> · <code data-page-node-id="MRIABAqOCnWUYOMis4s0yE">have been built</code> · <code data-page-node-id="6Nb5Bo4SbctpB5m8FgjrjH">have swapped places</code></td>
+        </tr>
+        <tr data-page-node-id="NVNo8ZfdK4DLggQSXhHsxe">
+          <td data-page-node-id="hNtc9HjGFB97iqiZ10BLal"><strong data-page-node-id="CwqufMmnzr5X2xtfk35Y9F">空间顺序</strong></td>
+          <td data-page-node-id="7r2lmoBot7THNF2IiGcAdd">固定一个扫描方向：从上到下 / 从左到右 / 北 → 南 → 东。并且<strong data-page-node-id="6ViRVuiRCsPb1UCA9SXEcF">把方位词写出来</strong>（in the north / on the southern side / to the east of the marina）。</td>
+        </tr>
+        <tr data-page-node-id="8DWs27SNWjomkDd7HSMVFs">
+          <td data-page-node-id="r2oKWmvRv2YFH2q58v1Bw8"><strong data-page-node-id="bVPW5tFJqMy8EB0ovtFuEO">主题句</strong></td>
+          <td data-page-node-id="fxhFvuqvooa73Gkh1Inxh8">每段开头一句概括句，告诉考官"这段讲哪块区域"。<br data-page-node-id="hQjNmKw73xiBXyJKFdp6Wy">
+          例：<em data-page-node-id="mn0wm05DH2HtUbdDEzXlRk">The public beach on the northern side has been retained, but the marina area has been extended …</em></td>
+        </tr>
+        <tr data-page-node-id="4A4QOFS0PMcpJ1WvD43A2r">
+          <td data-page-node-id="wilLsZHNS6ZqJnyrvzyW6f"><strong data-page-node-id="jZq0CkcDgfxccMB4djjwqi">连接词</strong></td>
+          <td data-page-node-id="g1xaoMjgOKQPOXnU1PRV91">够用即可，不必密集。标准要求的是"读得顺"，不是"连接词多"。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note" data-page-node-id="Gy6uuyXwAp38yLEXgMuKdY">
+      <div class="lb" data-page-node-id="mCzb8fWuvXR7kBwPV6p1wC">考前必复习</div>
+      <p data-page-node-id="EH3syaC9m72KOKCFratpjw"><strong data-page-node-id="ijAQdiQeQuwYgfyeYCWgVn">现在完成时被动语态</strong>（<em data-page-node-id="Xr2Nx50aYPrB7RwWcMsUrX">has been + 过去分词</em>）是地图题的默认配置。
+      另外把过去时、将来完成时一并过一遍——工艺流程或预测类题干有时会用到。</p>
+    </div>
+  </div>
+
+  <!-- C -->
+  <div style="margin-top:48px;" data-page-node-id="kTi1xwBPrxv38HSjKSWm5w">
+    <h3 style="font-size:21px;" data-page-node-id="2FwYDyyCzPIN7XMCnAMSTX">C · 过程类（流程图）</h3>
+
+    <p data-page-node-id="xz3MficPm6VENRw2hZSWe6">流程图的两个真实难点：<strong data-page-node-id="UbKbRUTTMyz9UOYsTzB9HV">① 凑不够 150 词 ② 每一步都在重复同样的措辞。</strong></p>
+
+    <div class="steps" data-page-node-id="XFOU8Xx5vBq2kFgHa4kKCN">
+      <li data-page-node-id="Uek7xwDUAWN9zPkmHfuZEK"><span class="st" data-page-node-id="ZKZQlo8XFFo5EyIL771Tr2">不跳步，但可以合并</span>
+        <span class="sd" data-page-node-id="VRX5uqQ15YFjGjEOiPeQAh">每一步都必须出现。相邻的两步可以合并成一句描述，但<strong data-page-node-id="5eIGX9dK6vuxZFtf0qVjfW">不能整段跳过</strong>。</span></li>
+      <li data-page-node-id="wkUh38FGNCu89v2Lt4MMRc"><span class="st" data-page-node-id="PkQ7KFvSoHpoSG0PEVZddD">每步换一个动词</span>
+        <span class="sd" data-page-node-id="TYokEAzJZRq1bwSx9RVCKp">这是凑字数又不重复的唯一正解。<br data-page-node-id="jLUjlH2055YhXWEzMkO06c">
+        <em data-page-node-id="KC886c9tOgHwNQ7ACAldHW">grow → harvest → pre-process → break into small pieces → produce cellulose → chemically process into sugars → add microbes → convert into ethanol → burn as fuel → release CO₂ → re-absorb</em></span></li>
+      <li data-page-node-id="Fb9MUgBvKL83ZGupbG4997"><span class="st" data-page-node-id="oHIDRSpWjCGS7sL6sLcXBN">时态固定</span>
+        <span class="sd" data-page-node-id="B5zBzS1uAKU6Ewm7bclQTn">一般现在时 + 被动语态。流程是恒常真理，不随时间变。</span></li>
+      <li data-page-node-id="xPSEKGzeJwnIFt1QbDLD8o"><span class="st" data-page-node-id="WHjDkFIL7QVLXcHBoCB59r">抓住"环"</span>
+        <span class="sd" data-page-node-id="qxDkbWHyZ5PN9GlgTihEr9">如果首尾相接（例如车辆排放的 CO₂ 又被植物吸收），
+        <strong data-page-node-id="FpBt86qQ1JUs3GygEYTdAm">"循环"就是这个流程最大的特征，必须进 Overview</strong>。</span></li>
+    </div>
+
+    <div class="ex" data-page-node-id="rE30S8huiRCgJtZrn3GezL">
+      <div class="hd" data-page-node-id="0q9nWRNL9komWJa3j9HBI6">示范 · 段落切分</div>
+      <div class="bd" data-page-node-id="e0ZyZToyvRPaPjsgpPinXC">
+        <p data-page-node-id="8z1DughnMKjeDJuWGSRdKa"><strong data-page-node-id="aZrah9AUOHzS47sEo9ozyf">Body 1（前半程：原料 → 糖）</strong><br data-page-node-id="A46PPMmvYaXCrjFEZC3LWz">
+        The process begins with plants and trees using sunlight and carbon dioxide as energy for growth. After harvesting, this raw material enters the pre-processing stage, where it is broken into small pieces by a crusher. These small parts are then turned into cellulose, which is chemically processed to make sugars. In the final production stage, microbes are added to the sugars, allowing them to be converted into ethanol.</p><p class="cn" data-page-node-id="cn11">流程始于植物利用阳光和二氧化碳作为生长能量。收割后原料进入预处理（被破碎机碾碎）；再变成纤维素并化学处理成糖；最后阶段加入微生物，使其转化为乙醇。</p>
+        <p style="margin-top:16px;" data-page-node-id="4fejytPHDlnuyNDU4DCH5n"><strong data-page-node-id="RIdFEjQkKWMwfIBGWjDcGD">Body 2（后半程：乙醇 → 回到起点）</strong><br data-page-node-id="R78gA5hSTYqD0L0tW6U7QK">
+        When ethanol is burned as fuel in cars, trucks and planes, carbon dioxide is released into the atmosphere. This CO₂ is then re-absorbed by the plants, and the whole cycle begins again.</p><p class="cn" data-page-node-id="cn12">当乙醇作为燃料在汽车、卡车、飞机中燃烧时，二氧化碳释放到大气；这些 CO₂ 随后被植物重新吸收，整个循环再次开始。</p>
+        <p style="margin-top:14px;font-size:14.5px;color:var(--ink-2);" data-page-node-id="Q8wSXSXm2U5H0VzYvzn7MJ">
+          注意切点选在<strong data-page-node-id="h6kGdbGJUXY2bfC9lHL5UR">"乙醇生成"这个中间产物</strong>上：前段讲怎么造出来，后段讲怎么烧掉并回到起点。
+          这样两段各有一个中心，而不是机械地"前六步 / 后四步"。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="t1s5" data-page-node-id="sOEjFOoE6GMsPMolEvi1gW">
+  <h2 data-page-node-id="sfnfRrEfnNuQW27KjfHFZM"><span class="num" data-page-node-id="zMCAOwyw4SMZuObI0GyqgE">05</span>语言引擎</h2>
+  <h3 data-page-node-id="8aqvP03TO5pPwVpHyCD1Dd">时态 × 语态 × 句式变化</h3>
+
+  <table data-page-node-id="xhHH6XFNHe3YaSMCsCyOsC">
+    <thead data-page-node-id="tKY0pXf3z26kVUeMHHpKKY"><tr data-page-node-id="RIvYqQaObTYxGvFiyzLfWv"><th style="width:130px" data-page-node-id="M5EqXWBG2etOh0MZMpbVxO">题型</th><th style="width:170px" data-page-node-id="hdfwBUxJUpi4vhGavvvR53">默认时态</th><th style="width:130px" data-page-node-id="GfmRoFHrAPXtX8ER2kUk5K">默认语态</th><th data-page-node-id="VoPIIOFUcLt1IovzsvBDGW">说明</th></tr></thead>
+    <tbody data-page-node-id="tt5mF374KM4Anzce5PKv90">
+      <tr data-page-node-id="4uXMlWalgl7lUlkMZJZbBU"><td data-page-node-id="4OwuvBdfNpGFgg3LfXGFJG"><strong data-page-node-id="RFlocd3QxztDfxGK3xCq8Q">静态数据</strong></td><td data-page-node-id="WFKh7XxGpi8HFiokXHnU4w">一般现在时</td><td data-page-node-id="OJZikQRvBOOyGsceHFSfaj">主动为主</td><td data-page-node-id="MBatJzg6ReaJH0H91uUkbi">无时间维度的数据对比。</td></tr>
+      <tr data-page-node-id="5f0MhlppT5ge4kCa0cRXqW"><td data-page-node-id="jSlpvJ9Ox22j7pFLbcxNVU"><strong data-page-node-id="OWt2iHl5BbgQqFDrHD6ito">动态趋势</strong></td><td data-page-node-id="26gevNZpOxNautSmwEvsZw">一般过去 / 现在完成</td><td data-page-node-id="M2r2HxjtnZEcqIAUbU6OvD">主动为主</td><td data-page-node-id="lcCqNZ8F1dj5PJpGLWvGZA">有明确时间轴，注意时间状语与时态匹配。</td></tr>
+      <tr data-page-node-id="DHDeFeM4paXrJRmJX0gDMm"><td data-page-node-id="RUCvczm00FLEM6DfNAfHOG"><strong data-page-node-id="euHarVicrmLUofUZbFV4xU">地图</strong></td><td data-page-node-id="a2iao56w8tWyQ31RSmH0w5"><strong data-page-node-id="1Ii8rCldcX0WlzuAAwJlMf">现在完成时</strong></td><td data-page-node-id="wsj1WDf0lY6i885B4xt8zd"><strong data-page-node-id="uL9A9vtKQPHkDBRy6NvZiH">被动为主</strong></td><td data-page-node-id="zKHRwwGLgKXK3FJyEaQICp">变化从过去持续到现在，施动者未知。</td></tr>
+      <tr data-page-node-id="n5PhmpH6EcGqJCpDDjQlDE"><td data-page-node-id="m7XpwDAdqQGPK0A2GxJKh9"><strong data-page-node-id="PJnnHPzzQNO2myPEYAXHhw">流程</strong></td><td data-page-node-id="xCMZ2QpmfDwzJ7JXv8KhCa">一般现在时</td><td data-page-node-id="hBWF1q25WFEj5Su9QdF7pl"><strong data-page-node-id="KF6ODkXdEzeHcvRAla8yHm">被动为主</strong></td><td data-page-node-id="p2xZG1OY4rLArVpVfWslKZ">客观流程，强调"被处理"而非"谁处理"。</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note warn" data-page-node-id="oU53fvCUlpcHSiXZ6X4C8f">
+    <div class="lb" data-page-node-id="heLWH2HO8pmufaE9J79vUr">三大语法雷区</div>
+    <p data-page-node-id="OEeYUykA60jncfQ1nOHjHh"><strong data-page-node-id="egTVyykRKIkvMoC112G4DU">① 句式单一。</strong>连续三句同样的主谓宾结构，Grammatical Range 直接掉档。刻意轮换主语（人 / 物 / 学校 / 形式主语 it）。</p>
+    <p data-page-node-id="whRJJIc3aRhEPDex4rGcwH"><strong data-page-node-id="JkjG6UkFED0nR3yZ54p2yI">② 地图题忘用被动。</strong>"Someone built a hotel" 是典型中式思维，正确是 "The old castle has been converted into a hotel"。</p>
+    <p data-page-node-id="7HT0oW0K2GTOuOwEftesO6"><strong data-page-node-id="ebsLb1RsvFxMJvYovDucwp">③ 数据题只描述不比较。</strong>Task 要求里有 <em data-page-node-id="WlTePnUefNTrsi7s02HswR">make comparisons where relevant</em>，不比较就是没完成任务。</p>
+  </div>
+
+  <div class="grid g2" data-page-node-id="YwyyZJFUC6glqqM330BTQO">
+    <div class="card hi" data-page-node-id="rmruFdpCxyXi7Qo9CNyz0x">
+      <div class="tag" data-page-node-id="rakIsuGHSWTten58PtU8kG">压缩型表达</div>
+      <p class="d" data-page-node-id="hNuAjsE6Y0uxjJtPvDYESB"><code data-page-node-id="ooVuIHwfwhjEhnjLDHnjV6">respectively</code> 按序对应 · <code data-page-node-id="8xQfxtRX3clZjWfPAk0YNt">by a margin of</code> 差距为 · <code data-page-node-id="YklCafITdIUoKpJelpQfy9">ranging from X to Y</code> 区间 · <code data-page-node-id="czy6H5y4YKGE4TLUPxZg3Y">at £X and £Y respectively</code></p>
+    </div>
+    <div class="card hi" data-page-node-id="xcOYEkYVNC2tcGJxFkqkg4">
+      <div class="tag" data-page-node-id="pBJLMiLs1L1gT90JTwFrXa">定位型表达</div>
+      <p class="d" data-page-node-id="mXopShHqUmgbUEF8XXAlzI"><code data-page-node-id="FHhYLh6rueUzvmt6kGPDYm">the highest / the lowest</code> · <code data-page-node-id="OZ03ECk5a2VUSRGltga5bm">next comes</code> · <code data-page-node-id="OtIBJ8SNbBz6mOJFHaARDL">in all cases</code> · <code data-page-node-id="6QfWG81ICIZotwA033JXW5">by contrast / conversely</code> · <code data-page-node-id="ej1PrlcVIzYxk0DCdBqBlY">a similar pattern can be seen</code></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="t1s6" data-page-node-id="ZxYUhAE7STpOz0teHRcvGH">
+  <h2 data-page-node-id="Jg2uha9A88WapqLUkVsuzm"><span class="num" data-page-node-id="FhrVAzmS8bHICSqvAIiRdh">06</span>评分映射</h2>
+  <h3 data-page-node-id="bnYAEGfK9vEhsgAK55ie4t">你在做的事，对应哪一项分</h3>
+
+  <table data-page-node-id="Tf7DO9JeaRqu5NPw9BXhJL">
+    <thead data-page-node-id="uJfVZOO7PKK19iHXJ58ZCc"><tr data-page-node-id="rH6tusRUDjkyaacdGs9A9Q"><th style="width:190px" data-page-node-id="toxRas5cqJ9XzMd1DQOxFA">评分项（各占 25%）</th><th data-page-node-id="vV0CDrPE3xDw6SRH4zBgG9">你的动作</th></tr></thead>
+    <tbody data-page-node-id="IA8IPN3bXM8Tv42kMV8yhP">
+      <tr data-page-node-id="kxsUeaHJrHhk47PdroXymZ">
+        <td data-page-node-id="H1KoujJJzkCOci01NCytqn"><strong data-page-node-id="fr4hEeE2F6RmvKk7JCDWNE">Task Achievement</strong></td>
+        <td data-page-node-id="B4mZUq8GO1GRIN5XUBxRKS">有没有 Overview？选的主要特征对不对？有没有做比较？有没有引入无关信息？</td>
+      </tr>
+      <tr data-page-node-id="9dIgnUDGnXpMMBTJ39lOtu">
+        <td data-page-node-id="Ni7qS3uDEQCaOyvqisgLC0"><strong data-page-node-id="0bMkXDfJpn1kGIkDIqahSB">Coherence &amp; Cohesion</strong></td>
+        <td data-page-node-id="u95twChF6KN2rqq5VjvEJk">段落有没有单一中心？信息顺序是否合乎逻辑（时间 / 空间 / 大小）？连接词是否够用而不冗余？</td>
+      </tr>
+      <tr data-page-node-id="1U4YPlJfHN9oC5t496pNBg">
+        <td data-page-node-id="D0ibLZyFTObjUx0bBe0J9e"><strong data-page-node-id="ahBNOlLbT6jTBx8k4mUqdG">Lexical Resource</strong></td>
+        <td data-page-node-id="qeO0ubSi58vX8Gsn572431">题干改写是否充分？同义替换是否自然（而非生僻）？有没有用词重复？</td>
+      </tr>
+      <tr data-page-node-id="EefbH6QvjGqmIH0YdwxmX6">
+        <td data-page-node-id="saphPKwH3iU08TzRGXC1VO"><strong data-page-node-id="G4g3IqFsEWwqgn2lSln7j1">Grammatical Range</strong></td>
+        <td data-page-node-id="P7VrPBWKE6wFjV3c7fH0KL">句式是否有变化？时态是否匹配题型？被动语态是否用对？</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="note" data-page-node-id="vmfyxbuAwx0dzA3QDVmaDV">
+    <div class="lb" data-page-node-id="k5V0YDYZBVLUXGHRFBdIcn">投入产出比排序</div>
+    <p data-page-node-id="MWLEjVbSKRkSK33K05IrFC"><strong data-page-node-id="iNsLPAxbFvhBP0tHH717wD">Overview</strong>（送分，写对就有）→ <strong data-page-node-id="0yElCX8bABqio4s9Y6c9bA">段落分组逻辑</strong>（结构分，不考词汇量）→ <strong data-page-node-id="uVeVeF48vSg5PpFtPY2SzW">时态语态</strong>（背一次受益全程）→ <strong data-page-node-id="3Sr1IiHLBBP0oAWqTeSxgb">句式变化</strong>（需积累）→ <strong data-page-node-id="iWfW8h7xHoxkTPeJNAskdZ">高级词汇</strong>（性价比最低，且容易用错）。</p>
+  </div>
+</section>
+
+<!-- ============ 7 ============ -->
+<section id="t1s7" data-page-node-id="MOtUuG9rB0ezkBjledLq9f">
+  <h2 data-page-node-id="Uy3DWOJIbGTPnLy1DSMAa9"><span class="num" data-page-node-id="5jvklUB4HE9AQXHGk9JBBO">07</span>20 分钟节奏</h2>
+  <h3 data-page-node-id="5v1sVcYoWK3gMKEgyTEv0A">把时间花在刀刃上</h3>
+
+  <div class="tl" data-page-node-id="OKJTPWqGoIKHSi8lF0bYdb">
+    <div data-page-node-id="KbNh32OUISML3i7m7b4Gd5"><b data-page-node-id="lYQcB7bJThGWpxc7LGjijr">0–3 min</b>审题 + 找 Overview</div>
+    <div data-page-node-id="3xGOj3eAHC2qDoxnYJAuw0"><b data-page-node-id="7BiDunPMWAkLSioYoId9KP">3–5 min</b>改写开头</div>
+    <div data-page-node-id="UYZ2wJqbcVssV9L57JJ8LM"><b data-page-node-id="Nm5xZuAc3obrPsyEE1i5A6">5–8 min</b>写 Overview</div>
+    <div data-page-node-id="b7GSwnjXvNrExmIFCRKfGm"><b data-page-node-id="axciWDKVsuofy520XYsvfb">8–16 min</b>两个主体段</div>
+    <div data-page-node-id="9s8NuAaMREKlgisuNIEdGc"><b data-page-node-id="TUSuE97UUcHSf37DHrKU0R">16–20 min</b>检查语法</div>
+  </div>
+
+  <div class="note ok" data-page-node-id="lKwzLD5FiCxFqvVnGAasej">
+    <div class="lb" data-page-node-id="8i5djGDVFLdbNZAIhHiasK">最关键的一步</div>
+    <p data-page-node-id="okJPiE5GKAW7fsgjrc9o3l"><strong data-page-node-id="78PQYAVRXhWiRdq3TxRnBq">Overview 要在动笔写主体段之前就想好。</strong>
+    很多人先写细节、写完才发现不知道该概括什么——于是 Overview 变成数据罗列，直接掉档。
+    审题那 3 分钟，唯一的任务就是圈出"最值得说的两条"。</p>
+  </div>
+
+  <p style="margin-top:24px;" data-page-node-id="MT6c1hs1NshQBTcOgVzK5r">
+    <strong data-page-node-id="rASn6gG83UijGXN8w8UTrj">最后 4 分钟检查优先级：</strong>时态是否统一 → 被动语态是否遗漏 → 名词单复数与冠词 → 有没有抄题干 → 字数是否过 150。
+  </p>
+</section>
+
+<!-- ============ 8 ============ -->
+<section id="t1s8" data-page-node-id="B3GS5kCfOCLFQKUkylEtHP">
+  <h2 data-page-node-id="Z5Kq6yAKp3WH3C4DCcWYZD"><span class="num" data-page-node-id="8zEhDqwGGI9UM6UIeELCK6">08</span>自查清单</h2>
+  <h3 data-page-node-id="M2ZDOKCY0gofsD9YW12ady">交卷前逐条过一遍</h3>
+
+  <ul class="check" data-page-node-id="y4FdKUkNLuW1k7C0RFOGve">
+    <li data-page-node-id="BMUlIesBUC7TF6Z5g4HAm0"><b data-page-node-id="7Bn7J2tORMn5m65Z9wujvE">开头是改写，不是抄题</b> —— 词、结构、时态至少动了两处</li>
+    <li data-page-node-id="dXPr12gAX9uooxJT61kLtC"><b data-page-node-id="2fniXrRP8uP92cEQ6lH0Jv">有独立的 Overview 段</b>，且以 <code data-page-node-id="AaRNpTeRRtSxArHsOuuFkC">Overall</code> 开头</li>
+    <li data-page-node-id="EeBaID0to2Hm6lT8DEyh4q"><b data-page-node-id="25hnT6OEb9rkHd6TnRhi30">Overview 是归纳，不是罗列</b> —— 能回答"所以呢"</li>
+    <li data-page-node-id="7mAHU2IFSDJF6GYpWAqTui"><b data-page-node-id="YIOUD46sKcJMSarSGHdvb3">Overview 里没有外部知识</b>，每个归纳都能被图面支撑</li>
+    <li data-page-node-id="YBO4eHB7jVKjiXC6YID6pL"><b data-page-node-id="LyscM4BxhKTrHENPgg2JEx">主体段按逻辑分组</b>，每段一个中心</li>
+    <li data-page-node-id="1B6ahnHFt1KxwSrTVwu3Bc"><b data-page-node-id="qcrLNTfjrDSHTl0yLvxw9s">数据题：每个数字都带了定位或比较</b></li>
+    <li data-page-node-id="KXx4N3fb31ZEtMZpNJsFmQ"><b data-page-node-id="q6ELxtVPYKAlmw1lhPApeJ">混合题：两个数据源之间有关联句</b></li>
+    <li data-page-node-id="Dp4XKiNC9BMPL0MJP8911i"><b data-page-node-id="xAmbcxon5lDFpeRUvJD4FE">地图题：现在完成时 + 被动语态 + 方位词齐全</b></li>
+    <li data-page-node-id="i6CK2N40JN0MY1IECgxEHN"><b data-page-node-id="4G270Fth9F4IA9rgJ6t2VF">流程图：无跳步，且每步动词不重复</b></li>
+    <li data-page-node-id="Sk9ceFg87bhiMnOFdicMCT"><b data-page-node-id="21XrH8xqySYOqCsz35ZvkB">连续三句没有出现完全相同的句式</b></li>
+    <li data-page-node-id="b5ZGHqrWDpRjwEtep5abKE"><b data-page-node-id="9RwQqYN2zNXdYXuMyK6AC5">字数在 170–200 之间</b></li>
+  </ul>
+</section>
+
+
+
+</div>
+
+<div class="wrap"><div class="part" id="part2"><div class="pl">Part 2</div><h2 class="pt">学术类 Writing Task 2 · 大作文</h2></div>
+
+
+
+
+<div class="wrap" data-page-node-id="BWwF4tClhYK53viv9spU50">
+
+<header data-page-node-id="fJA3xBuhGOtTHYpE823Uj9">
+  <div class="kicker" data-page-node-id="lXodEe6Ld7NuuLZCt61Dfn">IELTS Academic · Writing Task 2</div>
+  <h1 data-page-node-id="RFPY5yzYSXmYovutK0x9gD">同一个话题，<br data-page-node-id="jHGACbeYYVCDoy1DqXJJcl">可以写成<em data-page-node-id="OZG0kwiLTaJEzBGnGBcXEf">两篇完全不同的文章</em></h1>
+  <p class="lede" data-page-node-id="ZM4YM9udd7I0FSfllKF1KA">
+    决定你怎么写的不是"话题"，是<strong data-page-node-id="4TTcyJEVNjeBKbEEnt8k6c">题目指令</strong>。
+    这份方法论把五种题型压成一条判断轴，再拆到开头、主体、结尾的每一句该干什么。
+  </p>
+  <div class="meta-row" data-page-node-id="V6XHW6JiyeBdiB2uyuK2AE">
+    <span class="chip g" data-page-node-id="SPa8ERsPXGI9H0qSxXdJ44">40 分钟</span>
+    <span class="chip g" data-page-node-id="qBBaDPRxuvs2LCjbruQvK1">250+ 词</span>
+    <span class="chip" data-page-node-id="YZgLaf9DHTyuzBVDSrT8Cu">占写作总分 2/3</span>
+    <span class="chip p" data-page-node-id="GnVSszNUgW8TpE8XSIKUWb">立场不贯穿 → 封顶 6.5</span>
+  </div>
+</header>
+
+<!-- ============ 0 ============ -->
+<section id="t2s0" data-page-node-id="m8sovK01YABmNb7Tm88ESI">
+  <h2 data-page-node-id="HK71ds4PFiZa4JO9diZ2L6"><span class="num" data-page-node-id="TaV8boJj2azSVNEE30cZI8">00</span>指令决定论</h2>
+  <h3 data-page-node-id="Luv5x4icObtTtIgDn8imOM">第一步不是想观点，是判题型</h3>
+
+  <div class="oneline" data-page-node-id="x8bBPVZotvDnoCKBi7oFJ7">
+    <div class="lb" data-page-node-id="BoC16QmBzjnp7gVxdcXBmE">一句话版本</div>
+    <p data-page-node-id="BBX3w77ogeuDqea4rDOG8e"><strong data-page-node-id="aTAufHxkv8qTHdBH22QnQE">题目问什么，你就写什么；题目没问的，一个字都不要加。</strong></p>
+    <p data-page-node-id="xr2QzBLGYClNU5AIbtGlrt">所有 Task 2 的差异，都源于"这道题到底要不要你的观点"。</p>
+  </div>
+
+  <p data-page-node-id="oR7lIiMhW2KDZkkwnCw1YH">
+    Task 2 有五种常见题型，但它们不是五种写法，而是<strong data-page-node-id="E6ZXNflszqd5rOrGqQC0mI">两个阵营</strong>。
+    考生最高频的失分点不是语言，是<strong data-page-node-id="fBD8OgdC8YGjz8y30W2uBr">把 A 阵营的题写成了 B 阵营的文章</strong>
+    ——题目让你分析原因，你通篇在发表看法；题目要你的立场，你四平八稳地"两边都有道理"。
+  </p>
+
+  <table data-page-node-id="BxxUGKAytzjkyff3OwRH0W">
+    <thead data-page-node-id="V3dS6QZ3P4e2ZCFu65LoVR"><tr data-page-node-id="We8lqkgV1EujEHrGyRkjXW"><th style="width:200px" data-page-node-id="6LBbAa7Ymuwv4aZfEaHMjh">题型</th><th style="width:300px" data-page-node-id="2a3Fxn4UxHbrGHlTHn1N0a">典型指令</th><th style="width:110px" data-page-node-id="y8epQd6ipz3NdxAlkO5ZIe">要观点吗</th><th data-page-node-id="EG7Hqr09cqOToSMUJmhOzh">核心动作</th></tr></thead>
+    <tbody data-page-node-id="TaGfwPGiPO7DEyBnbHQ4Rk">
+      <tr data-page-node-id="dxFW0BINovYl8AFa0R3Y1j">
+        <td data-page-node-id="y667TZNIWOEPWr33FZ1KKg"><strong data-page-node-id="4jxtwtKg3jChzyrRE4HTqd">同意与否</strong></td>
+        <td data-page-node-id="VR6Sdf3K0QqDPg7w5Ai8U6"><span class="en" data-page-node-id="dJ5sfOokNeqjIJ6Vr7Vr4V">To what extent do you agree or disagree?</span><p class="cn" data-page-node-id="cn1">你在多大程度上同意或不同意？（观点类指令）</p></td>
+        <td class="yes" data-page-node-id="JDbQIkzVhXEIqgWaFAC4ip"><strong data-page-node-id="JmIweyEPJ2I9cO0el4ROC1">要，且必须明确</strong></td>
+        <td data-page-node-id="4aar0PiBE7Bpl9DmVFmwOJ">选边 → 全程论证这一边</td>
+      </tr>
+      <tr data-page-node-id="hfsPVYnWnvmgFqp1nkn5of">
+        <td data-page-node-id="tkizG7EikP6VozVsp3XXAD"><strong data-page-node-id="flFkDidoG6nQ8xNWRrHV5y">双边讨论 + 你的看法</strong></td>
+        <td data-page-node-id="4pHmtb5oMGvTba5bkDf8Vq"><span class="en" data-page-node-id="3mS9TPDfrgbfh3fgIbdQNX">Discuss both views and give your own opinion.</span><p class="cn" data-page-node-id="cn2">讨论双方观点并给出你自己的看法。（双边讨论类指令）</p></td>
+        <td class="yes" data-page-node-id="Lqk9zCngaxuRohSAfBgEcY"><strong data-page-node-id="Zqu2LG6yOCJaxAXUByTgOC">要，且要贯穿</strong></td>
+        <td data-page-node-id="GE3XuMJkipvnlkf7h72CV4">各写一方 → 每段都回扣自己立场</td>
+      </tr>
+      <tr data-page-node-id="ypaXLUuJrDBJQNIrFvJy9T">
+        <td data-page-node-id="McgcHuxrx0UA3ku2NCDdFE"><strong data-page-node-id="MDGsCX9FETqNG2HXTTZtda">利弊权衡</strong></td>
+        <td data-page-node-id="bOyQTnUpOqKoEWMHoGkA63"><span class="en" data-page-node-id="yA6IoOrw7M0aEfEbRWMzf0">Do the advantages outweigh the disadvantages?</span><p class="cn" data-page-node-id="cn3">利是否大于弊？（优势/劣势类指令）</p></td>
+        <td class="yes" data-page-node-id="xRZVhs4knHFhYZynmR8Tqy"><strong data-page-node-id="OBeLxJDqGlNcwA1CNK1duB">要（做判断）</strong></td>
+        <td data-page-node-id="3DpW4Nku5ydDiNoyjKsGTX">两边都写 → 最后明确"哪边更重"</td>
+      </tr>
+      <tr data-page-node-id="gPX5uTVQ7lE2Urz72zynp5">
+        <td data-page-node-id="bukP1WuevDA42rLtb01l3M"><strong data-page-node-id="lzA8QIGOFYJkQQb6YmukW8">原因 + 解决</strong></td>
+        <td data-page-node-id="mCU6SlMBhetvnTpjEWFWDs"><span class="en" data-page-node-id="athQBgw41Q7znlt8ZTGzJn">What are the causes? What measures can be taken?</span><p class="cn" data-page-node-id="cn4">原因是什么？可采取什么措施？（原因+解决类指令）</p></td>
+        <td class="no" data-page-node-id="bivUGV1TDQP4Lk39WSao2p"><strong data-page-node-id="SPDGyTgbaoEhZKMaKTAD0B">不要</strong></td>
+        <td data-page-node-id="Em7i5TCHIZzes83efuuQD8">一段写原因，一段写措施</td>
+      </tr>
+      <tr data-page-node-id="D1EpJoQ8jXvnbdNHR2sF6E">
+        <td data-page-node-id="8jFAjeXD3nyO8CPjEnDvjY"><strong data-page-node-id="hkThRj9GFypNabXVwLpK04">双问 / 报告类</strong></td>
+        <td data-page-node-id="SyrWjLMAtHGELUBAxJChsE"><span class="en" data-page-node-id="C9BzxXhtl6CB7e4LYfRCWM">Why is this happening? What effects does it have?</span><p class="cn" data-page-node-id="cn5">为何发生？有何影响？（原因+影响类指令）</p></td>
+        <td class="no" data-page-node-id="aXTybfWWFWt6P9zQWD4y2o"><strong data-page-node-id="vCoZzhZZBNETBIHkDCEa9Q">不要</strong></td>
+        <td data-page-node-id="GXEnPIpDBsJ0aqXbbuxJ3h">一问一段，直接回答</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="flow" data-page-node-id="dOzy1pwBwSoGr5FXFe04Oi">
+    <div class="q" data-page-node-id="6I9qCUrqsYtPhdt6fCJRG7">拿到题目 → 指令里有没有 <span class="en" data-page-node-id="cflBc4k1AZ7ASFU33vaUsB">opinion / agree / outweigh / your view</span>？</div>
+    <div class="branch" data-page-node-id="gbmCdNiTmTJDI4cHxBnXSz">
+      <div class="br a" data-page-node-id="t6lb3LYTEhIgtl4Jcq2YYh">
+        <div class="cond" data-page-node-id="eeDdz1Cn1vm8CaaX7WRkII">有 → 观点阵营</div>
+        <div class="out" data-page-node-id="4GgvzQUe31myLke72mhZAy">立场必须在 <b data-page-node-id="nM3c7O6OBUKd1fju1IJ1x1">开头、每个主体段、结尾</b> 都出现。<br data-page-node-id="3o9bITnqfmjCVNlxeitP8v">
+        不是"表达过一次"，是<b data-page-node-id="YweFmDz7fAIhDOQKdEkHqa">贯穿始终</b>。</div>
+      </div>
+      <div class="br b" data-page-node-id="w8IgZvBL3n4oxF5NAZ2iZ9">
+        <div class="cond" data-page-node-id="mCPU0Paq2wJWAfogx3fT5I">没有 → 分析阵营</div>
+        <div class="out" data-page-node-id="KW652hqabIBaF7chU0cCDt">只回答问题：原因是什么、措施是什么。<br data-page-node-id="Gei6FgJGwMH7vCpFxMgbm5">
+        <b data-page-node-id="d4ayldNoeENBfq2VE2RQSn">塞个人观点反而是跑题</b>。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note" data-page-node-id="wEOAKjHXPEXmHoDSPg2tsp">
+    <div class="lb" data-page-node-id="JmB6kl8IGyWTOHCj1Fa92x">审题 30 秒该做的事</div>
+    <p data-page-node-id="6S8YizJODDRhbCZXm9lEKP">把指令里的<strong data-page-node-id="zm8L0rcJCmna4Qelvg85ve">疑问词圈出来</strong>：agree? / discuss both? / causes? / solutions? / advantages?
+    圈出几个问号，文章就分几块。<strong data-page-node-id="EvTqVuqTvbbXzQeesVxvIG">这是规划，不是精读</strong>——别在审题上花超过 1 分钟。</p>
+  </div>
+</section>
+
+<!-- ============ 1 ============ -->
+<section id="t2s1" data-page-node-id="8A3Ma1huOVFHi6lJQRmAbE">
+  <h2 data-page-node-id="FzQ4js7JBC3pGFBDbXjKHa"><span class="num" data-page-node-id="3qlXrfuilhZxIbS5b2EFiE">01</span>同题异构</h2>
+  <h3 data-page-node-id="1IUtCzy76nA38skc5Qvo4Z">看懂这个对比，五种题型就通了</h3>
+
+  <p data-page-node-id="bJ5srgR6oVB5rGoMCrUQ0Q">
+    同一个话题"青少年犯罪"，两道指令，两篇完全不同的文章。
+    <strong data-page-node-id="SQDdyR2PRk5D7xX97rrcFG">这个对比是整个 Task 2 方法论的钥匙。</strong>
+  </p>
+
+  <div class="ex" data-page-node-id="xQVwbAm9syGwU6VLYDCQsk">
+    <div class="hd" data-page-node-id="KomZcYkaDqVWr9GltC7cBE">同一话题 · 两道指令</div>
+    <div class="bd" data-page-node-id="nRIEco2CR47mk9N1Yekp7A">
+      <div class="pair" data-page-node-id="aUu3OJV6DOtpchHGIWIW7k">
+        <div data-page-node-id="tgVGHhKetC2rYi6lQKwzYg">
+          <div class="lb" data-page-node-id="lxc2gxIk9htESW8jypr6zb">指令 A · 双边讨论 + 你的看法</div>
+          <p data-page-node-id="UikTOGT8JCS1BOqMHyfupg">Some people believe young people who commit crimes should be punished <strong data-page-node-id="XVt6iKR9XbJvj5080yCkGp">in the same way as adults</strong>. Others argue they should receive <strong data-page-node-id="UIJtGZd8OzcikZgCLqWmqe">education and support</strong>. <strong data-page-node-id="0k7ZBBN4jIVgTpdvPBWeSv">Discuss both views and give your own opinion.</strong></p><p class="cn" data-page-node-id="cn13">一些人认为犯罪的年轻人应与成人受同等惩罚；另一些人主张他们应接受教育与支持。讨论双方观点并给出你的看法。</p>
+        </div>
+        <div data-page-node-id="QLFwSHACQFZaO30D01Vs8g">
+          <div class="lb" data-page-node-id="AVQqTRY0ckdEBpO0cegoQ5">指令 B · 原因 + 解决</div>
+          <p data-page-node-id="cLonEndwL7MiNWoIFXOBi1">In some countries, young people are committing <strong data-page-node-id="Ax4OfmZEN84fjQwlQIG5Ni">serious crimes</strong>. <strong data-page-node-id="XhquMiDzItEaTfZVKVS5Dg">Why</strong> is this happening? <strong data-page-node-id="CyM52Pde546H7Uo47U9YKK">What measures</strong> can governments take to address this problem?</p><p class="cn" data-page-node-id="cn14">在一些国家，年轻人正犯下严重罪行。为什么会这样？政府可采取什么措施来解决？</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table data-page-node-id="Pyg0E0D88qyVhbGr7ZtS5i">
+    <thead data-page-node-id="pjsRpbvvNQXPiNed3PdLd0"><tr data-page-node-id="xTDWEd6Fnp2J99ajP2vuo8"><th style="width:130px" data-page-node-id="KNuABmhPFE9IjFY7PgxRD0">部位</th><th style="width:50%" data-page-node-id="v1k3EFBhqY87UhAjQ1YHv8">A · 观点阵营</th><th data-page-node-id="YkBHmAjUfe5maSqoSlX0X8">B · 分析阵营</th></tr></thead>
+    <tbody data-page-node-id="27UK1y7GZzSXprGDjUGEvC">
+      <tr data-page-node-id="g9ZOCWzgoqnXaW8LemAEK8">
+        <td data-page-node-id="5KH2MMAQN2khWCkYnzGD6I"><strong data-page-node-id="BgAysV4J03V2bXq5wLsY7D">开头</strong></td>
+        <td data-page-node-id="VE40brZovL7w0qfVks4FsE">话题 + 双方观点 + <strong data-page-node-id="qn9HHqOVXgEPGCbjqM5aEv">我的立场</strong>（三步）</td>
+        <td data-page-node-id="ALFSrX5QHGwfWtB7NPgzcZ">话题 + <strong data-page-node-id="BfY2SwvooukaZjbBoCq8d3">本文要讲什么</strong>（两步，无立场）</td>
+      </tr>
+      <tr data-page-node-id="VTBDs5oAK2sWXCaxH0INNU">
+        <td data-page-node-id="dXGu1pnNEVceMV42OQb3ze"><strong data-page-node-id="1vwhkZsZLEIyir0ILlcfT0">主体段 1</strong></td>
+        <td data-page-node-id="gpzST7qZuIQBRbch9CQ4bj"><strong data-page-node-id="czaoTWLRztM4jEq40HpYbH">我不认同的那一方</strong>（惩罚论），段尾反驳</td>
+        <td data-page-node-id="iikE6FO0MKKXRJOY2C0Nhd"><strong data-page-node-id="Kxkviex4sVRMVaiAXvzmS9">原因一 + 原因二</strong>（家庭支持缺失 / 教育机会匮乏 / 同辈压力）</td>
+      </tr>
+      <tr data-page-node-id="P4FhrX66DWJSDbuLBsqABF">
+        <td data-page-node-id="MGDkHPkhxzlieolAJyqUGQ"><strong data-page-node-id="tYb4J2nOKGC587uDOw2bLp">主体段 2</strong></td>
+        <td data-page-node-id="Fjr8NN5DJl8tqOtLd7gFFe"><strong data-page-node-id="sXHEr5AJW5uTOw3OrfJgzZ">我认同的那一方</strong>（教育支持论）</td>
+        <td data-page-node-id="7ZDEP2XmCDMYOROViaZWEx"><strong data-page-node-id="5mPEecsW1DndLg5EnArMg2">解决方案</strong>（政府措施）</td>
+      </tr>
+      <tr data-page-node-id="3nfI4Br6AiOFuPqXmiYqH4">
+        <td data-page-node-id="HdHYp7JEHdBXphEhpcDF20"><strong data-page-node-id="jsq4qtuyOMC0hpKXIz7Zsa">结尾</strong></td>
+        <td data-page-node-id="b5EW91i35C0n3vmulFIoZd">承认对方 + <strong data-page-node-id="FyAikHGa0t4fLBqIEdhbGV">重申我方</strong> + 一句理由</td>
+        <td data-page-node-id="vySt2cAHzVEkHRGB40LL8L">总结原因 + <strong data-page-node-id="UwYC4m6t5NkXWpCnG1cgU4">总结措施</strong>，无个人观点</td>
+      </tr>
+      <tr data-page-node-id="Vuy2LiD6nz7nffXIe1amcw">
+        <td data-page-node-id="8XacBPKqKz3mfz7U016GGl"><strong data-page-node-id="KBOZ6qtP3jh4nsQS8YroCJ">全文立场</strong></td>
+        <td class="yes" data-page-node-id="ahCg5xrjRq7ych5IoDkXWs">贯穿四段，处处有我的声音</td>
+        <td class="no" data-page-node-id="ExlDQ8arthzfZHS12HTSFJ">全程不出现我的声音</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="note ok" data-page-node-id="7WAsHAuPWOyznIuVnmFnVH">
+    <div class="lb" data-page-node-id="GNUVK1ERkxzi71fZJDK5fj">唯一不变的东西</div>
+    <p data-page-node-id="ypyiH6kwfZJiHNGEkyVvo1">无论哪个阵营，<strong data-page-node-id="g0DzdCtg32sM5z0nF4HqjN">开头都要改写题目</strong>（不抄原句），
+    <strong data-page-node-id="VvzrDtc3oI89nQX1j3gEDG">主体段都要有主题句</strong>，<strong data-page-node-id="tm0ROSN8iNRWcfmcAbuCbR">结尾都要短、都不引入新论点</strong>。
+    变的只有三处：要不要立场、立场放哪、结尾收什么。</p>
+  </div>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="t2s2" data-page-node-id="NpvKNqTPEARvCcgXMVl5EC">
+  <h2 data-page-node-id="mP9uN8w2HUpGGTQwjQBIhi"><span class="num" data-page-node-id="YgOZudTaF5kVoAekEATH8x">02</span>Introduction</h2>
+  <h3 data-page-node-id="Lgj9BdupnuWoSx4iG2X01M">三步版 vs 两步版</h3>
+
+  <h4 style="margin-top:24px;" data-page-node-id="C3CHaMT5nTWdm42KGxYvO8">A · 观点阵营：三步</h4>
+  <div class="steps" data-page-node-id="frkShgNT3yubmD5RpSzZi6">
+    <li data-page-node-id="hksIIrdnxeUENUApCxAD7H"><span class="st" data-page-node-id="AcVBitYAqwqui8wiK7zwEZ">① 改写话题</span>
+      <span class="sd" data-page-node-id="WLSDJkgy8ZxFlaWCCbnA4c">把题目换个说法。这不只是"礼貌"，<strong data-page-node-id="mbCSfn2WPG4LmYjx9hJ25u">它计入 Lexical Resource 的分数</strong>。<br data-page-node-id="HZpAielQxy3GsmADXGdR6T">
+      例：young people who <em data-page-node-id="wix8WGr4xWvUW5peCNIc2D">commit crimes</em> → young people who <em data-page-node-id="951armL3IhReeWHenWYJQv">break the law</em></span></li>
+    <li data-page-node-id="R5ASmhmAUOqfSNYCAlHT68"><span class="st" data-page-node-id="eNFzfKJE6UeH7PPro8xrIa">② 一句话并列呈现双方</span>
+      <span class="sd" data-page-node-id="Q79h0iMNdm0Xr26BSxUoQi">用 <code data-page-node-id="yL2QXuS7ia4t9zvL1M9SEs">while</code> 把两个观点塞进一个句子，形成直接对比。<strong data-page-node-id="McL9CwKnC85sSHtp6RYa6n">一句顶两句。</strong></span></li>
+    <li data-page-node-id="GRDeQNh0CXuEcSuTVCR3wW"><span class="st" data-page-node-id="LwfgsgRb21exJFRoEeAvJR">③ 一句挑明我的立场</span>
+      <span class="sd" data-page-node-id="BYu0kCc8ZKA9jZYGsEv81G">必须清晰、可判别。<strong data-page-node-id="Tl8MEmmRAij1SM3mFqpEaK">不能让考官猜，也不能骑墙。</strong></span></li>
+  </div>
+
+  <div class="ex" data-page-node-id="wm3b3jJmYVnkOtBE6z8FDC">
+    <div class="hd" data-page-node-id="I5vU2YTDkN2Oiuy6xqd6Kh">观点阵营 · 开头示范</div>
+    <div class="bd" data-page-node-id="uFXU4gwmsvqfOayQ6JZbDA">
+      <div class="sent g" data-page-node-id="zL586EATP7GlBaSjG2wddX"><span class="fn" data-page-node-id="lozehC7tmD9AkgHOcO1RuA">① 改写话题</span>
+        There are different opinions about how to treat young people <strong data-page-node-id="EMv6uABd3M7FfbAsqObBiv">who break the law</strong>.</div><p class="cn" data-page-node-id="cn1">关于如何对待违法的年轻人，存在不同看法。</p>
+      <div class="sent s" data-page-node-id="GbKhpXWoGu0gemIyhHrgwP"><span class="fn" data-page-node-id="k0phln4FS3GyHmI3aAH1sW">② 并列双方（while 制造对比）</span>
+        <strong data-page-node-id="FsRaNsVbwSAj6uox9nrk82">While</strong> some believe they should face the same punishments as adults, others argue that education and support are a better approach.</div><p class="cn" data-page-node-id="cn2">有人认为他们应与成人受同等惩罚，另一些人则认为教育与支持是更好的方式。</p>
+      <div class="sent p" data-page-node-id="5GO5uKsoifhBtx38Avjik8"><span class="fn" data-page-node-id="Dtt8YGT1EpUqBaDw7SgbAe">③ 我的立场（一句，不骑墙）</span>
+        <strong data-page-node-id="2yFnRJJznvYp8CnWu4P1BV">In my view</strong>, helping young people change through learning and guidance is more effective than punishing them harshly.</div><p class="cn" data-page-node-id="cn3">在我看来，通过学习与引导帮助年轻人改变，比严厉惩罚更有效。</p>
+      <p style="margin-top:16px;font-size:14.5px;color:var(--ink-2);" data-page-node-id="w8tuSjvhpA8ZBxRfETWarH">
+        注意第 ③ 句的功能：<strong data-page-node-id="7Jv9o59BaFusIAGPEmaS74">它直接告诉考官"我站在哪边"</strong>。
+        7 分要求里有一条是 <span class="en" data-page-node-id="1dzdwMboE6sjICSbuwVsJy">a clear position throughout the response</span>——
+        立场含糊，是这一档最典型的死法。
+      </p>
+    </div>
+  </div>
+
+  <h4 data-page-node-id="qYf9xB72wrBqfFHzFrOupc">B · 分析阵营：两步</h4>
+  <div class="steps" data-page-node-id="cIc7r7t5FUC6jeJdBMsGMK">
+    <li data-page-node-id="7BWeAV3l1y9cyNTpcbRn05"><span class="st" data-page-node-id="IaDxlChciRrdnBw0SHfUBS">① 改写话题</span>
+      <span class="sd" data-page-node-id="mTXajAEu1IoFbhIqE3e7Ce">同样换个说法，同样计入词汇分。</span></li>
+    <li data-page-node-id="cYQPntHAGtDHpZLVdi6nPA"><span class="st" data-page-node-id="GQRq6vbezMpYSAFJAHUfnR">② 说明本文涵盖什么</span>
+      <span class="sd" data-page-node-id="VcgvdkG7gJ8XK7OK2tbXjl">一句话交代"本文将探讨原因，并提出措施"。<strong data-page-node-id="GVnI7zkb73AIwQ9sw4wOQv">这就是全部，不需要立场。</strong></span></li>
+  </div>
+
+  <div class="ex" data-page-node-id="DkmTNgRgbSBwFvwBzG8PjE">
+    <div class="hd" data-page-node-id="UtPXho4R7DEWeE0ySgOSZD">分析阵营 · 开头示范</div>
+    <div class="bd" data-page-node-id="HMJqKYQ4NAH3IFbgugVAEL">
+      <div class="sent g" data-page-node-id="0TCmTudtJAGgmSc57vfWJs"><span class="fn" data-page-node-id="3YdvetgoAYnOlkrEnRB1Sc">① 改写话题</span>
+        In some parts of the world, young people are involved in serious criminal activity.</div><p class="cn" data-page-node-id="cn4">在世界上一些地方，年轻人牵涉严重犯罪活动。</p>
+      <div class="sent s" data-page-node-id="UdAw57EI8J1mdU177rcgzn"><span class="fn" data-page-node-id="ibitvL5WZrXGyaHeQdAzud">② 交代走向（无观点）</span>
+        This essay will examine <strong data-page-node-id="aPjjbMxX2rxKSmddooMnhs">the reasons</strong> for this and suggest <strong data-page-node-id="cNDG1DZtmbC2ybkIo8ooJL">what governments can do</strong> to reduce youth crime.</div><p class="cn" data-page-node-id="cn5">本文将探究其原因，并提出政府可采取的减少青少年犯罪的举措。</p>
+      <p style="margin-top:16px;font-size:14.5px;color:var(--ink-2);" data-page-node-id="lVsueGpozGlzYMUBtABTQF">
+        两句话结束。<strong data-page-node-id="SkZHMdCkDOHlmeYkVSRxXu">不加 "I think"，不做选择。</strong>
+        很多考生在这里习惯性塞一句观点，纯属多余——题目没问。
+      </p>
+    </div>
+  </div>
+
+  <div class="note warn" data-page-node-id="RSFf2J3r7o4BuDo5AvZIDA">
+    <div class="lb" data-page-node-id="ifM8udSAcYI9MxvIzs2lrS">红线</div>
+    <p data-page-node-id="xV9e53esCrBioMgLK9EOqs"><strong data-page-node-id="ZVevPvHxparwzueaOLfDPF">① 绝不全句照抄题目</strong>——改写是送分题，不拿白不拿。</p>
+    <p data-page-node-id="hN3KZxTelarAdquVSCByAT"><strong data-page-node-id="kxBHwv14ZVCDplFgAUef9F">② 立场不能写成"两边都有道理"</strong>——<span class="en" data-page-node-id="gbVWuDhyAF209DWcuzNWRv">"both sides have merits"</span> 在考官眼里等于没有立场。</p>
+  </div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="t2s3" data-page-node-id="JFtUGgeAd6uyqWmuAOULpT">
+  <h2 data-page-node-id="Oz1ZmkIAty73ndd6GspNsb"><span class="num" data-page-node-id="Kz0GmoF5vkfLuUO7GsQLCB">03</span>论述引擎</h2>
+  <h3 data-page-node-id="CkOh82jgmEjzUgejHginqC">让每个想法"站得住"的两句式</h3>
+
+  <p data-page-node-id="6pelkFfpdQvw23dPBRU33m">
+    这是 Task 2 最核心、也最容易被忽略的一条：
+    <strong data-page-node-id="glX7obm1ZS96GBSO4P8mmx">光提出想法是不够的，你必须解释它为什么成立。</strong>
+    9 分的 Task Response 描述里写得明明白白——
+    <span class="en" data-page-node-id="2UH63lYugzso7ainLIatiB">ideas are relevant, fully extended and well supported</span>。
+  </p>
+
+  <div class="grid g2" data-page-node-id="mkOgK3egVEu5c3HSfrHPWo">
+    <div class="card hi" data-page-node-id="kNjjpVCwXbUL08xMLJcziw">
+      <div class="tag" data-page-node-id="Ry9G1SrTCsWHZ63LBG6M0B">第一部分 · Claim</div>
+      <p class="d" data-page-node-id="xFD58jt7c0s4CsIaTQYImW">提出主张。<br data-page-node-id="OXQEQvMKV91Y1GlJfHI9l8"><em data-page-node-id="J6GRq7KWVnlGouAOGdEPqV">Harsh punishment also protects the public…</em></p>
+    </div>
+    <div class="card hi" data-page-node-id="WdSJwy0o5D5jh9GCwolFox">
+      <div class="tag" data-page-node-id="TrKhwF72WBhy014XJxyWH5">第二部分 · Explanation</div>
+      <p class="d" data-page-node-id="WV6fJxEC46ANkRdAOnXZ98">解释机制/结果。<br data-page-node-id="cG8PC6SrnU484Kr19Lr1IS"><em data-page-node-id="kGigxJD2mN4kr36mgZghtV">…by keeping dangerous individuals off the streets.</em></p>
+    </div>
+  </div>
+
+  <div class="note ok" data-page-node-id="H3HHNtlNTCYCS6sPgIBRqS">
+    <div class="lb" data-page-node-id="4SIWmtCFsub1nAB4YQzLF9">为什么是"两部分句子"</div>
+    <p data-page-node-id="uS5pCIsPIMo8UU6LLbYg10">一个句子同时完成<strong data-page-node-id="W5rdZQHUeAod3wZPjPo1Ib">主张 + 理由</strong>，是最经济的展开方式。
+    养成这个习惯，段落自然就不会显得空。<br data-page-node-id="yNId1KBBVFQTEVyLBP6uSp">
+    对比：<br data-page-node-id="ocr69sUApSGxgQapsPDIGJ">
+    ✗ <em data-page-node-id="fG0TDhxvAoOcY7VUOV3VAm">Harsh punishment protects the public.</em>（然后没了）<br data-page-node-id="WB21XMcFvI2pBLVMWv6bNw">
+    ✓ <em data-page-node-id="9h93lB9L1mORXtK3y1rqKU">Harsh punishment also protects the public <strong data-page-node-id="QKLIoqceUlxMM51mZwOCnB">by keeping dangerous individuals off the streets</strong>.</em></p>
+  </div>
+
+  <h4 data-page-node-id="EGStmYNcCFO5GvBvpymcpu">一个标准主体段的四件东西</h4>
+  <ol class="steps" data-page-node-id="DB8fQcc81kFiCnGeK9ai0g">
+    <li data-page-node-id="Vg0qmfrX3Yijyg9VzEe2Ht"><span class="st" data-page-node-id="ouJS7znf7zBhXLAAgFIM69">主题句（Topic Sentence）</span>
+      <span class="sd" data-page-node-id="BUfDDy7haG2XHmnUuuhH2w">第一句就告诉考官"这段讲什么"。<strong data-page-node-id="igqG4IivI8DEirPvCyqSed">每个段落一个清晰中心，是 Coherence 项的明文要求。</strong></span></li>
+    <li data-page-node-id="d71UnQXaNJxGS6AWFYFEf8"><span class="st" data-page-node-id="qUcywygvAIkqltzGDmb4xQ">展开 ①：主张 + 解释</span>
+      <span class="sd" data-page-node-id="IUYoHzgfxCCSRDWeO203BG">用上面的两部分句式。</span></li>
+    <li data-page-node-id="urGPaOqrRJefPvQ2Ccyo44"><span class="st" data-page-node-id="AfqqANhq9FUcQpifqchyyx">展开 ②：换一个论点</span>
+      <span class="sd" data-page-node-id="6kBZizT2pgN300wwdxNhXG">用 <code data-page-node-id="fJ1ckxoqddq6m8cs4i2Kjo">Moreover</code> / <code data-page-node-id="LSGNC4e7Y1GCJjGd6m64W6">Furthermore</code> / <code data-page-node-id="h8wyaXjogyj4YiyBfdOOpY">In addition</code> / <code data-page-node-id="DNi0YAc2HgH7d8hS8kXHQT">On top of that</code> 标记推进。</span></li>
+    <li data-page-node-id="uTwlQwpabH6GwonExWe3Er"><span class="st" data-page-node-id="ECYGzGVYlANLF1Ly0CsI7B">段尾收束</span>
+      <span class="sd" data-page-node-id="DyhfRniaJCS80ani0vIiB5">观点类：拉回我的立场；分析类：把因果链合上。</span></li>
+  </ol>
+
+  <div class="note" data-page-node-id="5LMdzJgTMKdqXaaU3EoiyX">
+    <div class="lb" data-page-node-id="TWNdCD0kVXAokljTuyAj7A">连接词的真实作用</div>
+    <p data-page-node-id="2LIbDNNSwLPCq7MTYU96vR">连接词不是装饰，是<strong data-page-node-id="ftRU97fCM1BWblUGHyu5Wk">逻辑关系的外显标记</strong>。<br data-page-node-id="DxlNoIKSJQHxlXSIAwCpZb">
+    <code data-page-node-id="gFGpBNWW5P7zkvZH0YVFTn">As a result</code> / <code data-page-node-id="YfEyEYcWDTARtxJbU0o0cs">This can lead to</code> / <code data-page-node-id="e8ZFZxEJWDHu6asfw98wc3">Because of this</code> → 标记<strong data-page-node-id="InGLmraHcTAy1aGV9Np7E2">因果</strong>，考官一眼看到你的推理链。<br data-page-node-id="mzvBJmWDB2aY28dISLHgFH">
+    <code data-page-node-id="qqjPZKom8JbD8f4baZ8REs">However</code> → 标记<strong data-page-node-id="mQQKCfmGGou7TISUn8yNBI">转折</strong>，在观点类文章里是"我的声音"的入场信号。<br data-page-node-id="pWeV7MG4zKRbkGnKyGmPqN">
+    够用即可，不必堆砌。</p>
+  </div>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="t2s4" data-page-node-id="ThAHRfVCOYm6WabSrMiLVF">
+  <h2 data-page-node-id="ZTmfIqCmPBSIMARbBYHAGS"><span class="num" data-page-node-id="Im1MtyFRo7DKrGvaDsAiRp">04</span>Body · 观点阵营</h2>
+  <h3 data-page-node-id="GNMXxLV5VZJspdzp0jDiw9">先写你不认同的那一方</h3>
+
+  <p data-page-node-id="X27AHPHbHri9r8p3B8IGdX">
+    结构很简单：<strong data-page-node-id="ZUUJrEvDFs52NiSO2A9h52">引言 → 主体段 1（第一方观点）→ 主体段 2（第二方观点）→ 结论</strong>。
+    真正有讲究的是两件事：
+  </p>
+
+  <div class="grid g2" data-page-node-id="jQEhhijylb2ilRDk7jrf24">
+    <div class="card hi3" data-page-node-id="SXo9LkFg7394AEXOTqRrbg">
+      <div class="tag a" data-page-node-id="4oPUt2sWjTWHZHGAnqDWTC">讲究一 · 顺序</div>
+      <p class="d" data-page-node-id="6XFb12ra1MArKzHasByHNr">先写<strong data-page-node-id="Wc3FfSXxineNW9tmGFzB7Q">你不认同的那一方</strong>。<br data-page-node-id="LrK9pZTeaySi6gCLNMs3Jj">
+      好处：第二段留给你支持的立场，结尾顺势加强，文章重心落在你这边。</p>
+    </div>
+    <div class="card hi3" data-page-node-id="KXLUrdAMr0L5nJixUTLqp6">
+      <div class="tag a" data-page-node-id="MzVPZMUI88AtUi2IscW03A">讲究二 · 人称切分</div>
+      <p class="d" data-page-node-id="uVV1HuuLSNcTDCsmwZF4Gb">用 <code data-page-node-id="i5RAHZJv9dTmcBoJ92ukTQ">Those who argue that…</code> 开头，<strong data-page-node-id="1b1rMK7y9Amb2nbWeXe1cb">明确这是"别人的观点"</strong>。
+      这个模板适用于任何双边讨论题，因为它天然区分了"他人"和"我"。</p>
+    </div>
+  </div>
+
+  <div class="ex" data-page-node-id="W8EQRN3j4NDsq5akrDWGDs">
+    <div class="hd" data-page-node-id="FtjBp7kpZbqNZ0MSoX2t66">观点阵营 · 主体段 1 完整示范（惩罚论，我不认同）</div>
+    <div class="bd" data-page-node-id="i2Jxi9pABfUGrGfRjP6SX1">
+      <div class="sent s" data-page-node-id="DoFDoM2KiLhRWc6M8LoME4"><span class="fn" data-page-node-id="f3XZivwyEph5bYN7UuhXbk">主题句 · 归属他人 + 陈述主张</span>
+        <strong data-page-node-id="iHeMCwqYRtRvHuaKwjZiGe">Those who support</strong> equal punishment argue that serious crimes should be punished severely, <strong data-page-node-id="1j5AEptvOJ7yExRfXO8MYi">regardless of age</strong>.</div><p class="cn" data-page-node-id="cn6">那些支持同等惩罚的人认为，严重犯罪应受严厉惩处，不论年龄。</p>
+      <p style="font-size:14px;color:var(--muted);margin:8px 0 14px;" data-page-node-id="0YjXEv7qR1RiZ2V3twaVkE">
+        ↑ 结构 = <strong data-page-node-id="w4adtJG6o5s6LfqECt5qjO">先点名人群，再陈述其论点</strong>。这个模式可以套用到任何双边讨论题。</p>
+
+      <div class="sent g" data-page-node-id="Rxzu2pG8mIVNGRre4yt8SD"><span class="fn" data-page-node-id="9JgOVxwW2Aw6oBSz5M4Frh">展开 ① · 主张 + 解释</span>
+        They believe that if young people know they will be treated in the same way as adults, they will <strong data-page-node-id="q7usJX6528fq2fz9cA90pW">think twice before</strong> breaking the law.</div><p class="cn" data-page-node-id="cn7">他们认为，如果年轻人知道会和成人受到同样对待，他们在违法前会三思。</p>
+      <p style="font-size:14px;color:var(--muted);margin:8px 0 14px;" data-page-node-id="KsBGtG5AqKhOOrO5VBIgGQ">
+        ↑ 不只是说"他们觉得有用"，而是<strong data-page-node-id="lPQlasLCDARJwRTCnEoM4R">解释为什么他们觉得有用</strong>——这就是 develop。</p>
+
+      <div class="sent g" data-page-node-id="eYGGRRbU40ZPwZy7XZMBP7"><span class="fn" data-page-node-id="pJ2cUAlc3TeoTINDvdmbpJ">展开 ② · Moreover 标记追加</span>
+        <strong data-page-node-id="9ukpCqJQ5azJYEnG0GurbK">Moreover</strong>, harsh punishment protects the public <strong data-page-node-id="Jr43zhgeddc1diALlwQNxu">by</strong> keeping dangerous individuals off the streets.</div><p class="cn" data-page-node-id="cn8">此外，严厉惩罚通过让危险分子远离街头来保护公众。</p>
+      <p style="font-size:14px;color:var(--muted);margin:8px 0 14px;" data-page-node-id="tI5b2Za1BA0XaTw8SXSv76">
+        ↑ 一个句子两件事：既说了"能保护公众"，又解释了"怎么保护"。</p>
+
+      <div class="sent p" data-page-node-id="5pkh6vuyUxr8uEDogf1D3C"><span class="fn" data-page-node-id="RKXGgw7j3oGmcV2QPCpkU0">段尾 · 拉回我的立场</span>
+        <strong data-page-node-id="e6pnQ39nBmz1izENAc9i6G">However, in my opinion</strong>, this view fails to consider why many young people turn to crime in the first place; simply punishing them does not address the problem.</div><p class="cn" data-page-node-id="cn9">然而在我看来，这一看法没考虑许多年轻人最初为何走上犯罪；仅仅惩罚并不能解决问题。</p>
+    </div>
+  </div>
+
+  <div class="note warn" data-page-node-id="PeAteH4Qitl0XkR11LJe8J">
+    <div class="lb" data-page-node-id="LgOpwFabBRuFrKdM2AqH3f">最关键的一条：立场贯穿律</div>
+    <p data-page-node-id="7uV5vWGHzloF66FA7q793B">在双边讨论题里，考官要求你的立场<strong data-page-node-id="U1R59qZKCjfs7KWV5iGXro">贯穿全文</strong>，而不只是在开头和结尾各出现一次。<br data-page-node-id="I1TkHsFqknGtRiouMB5KX0">
+    所以<strong data-page-node-id="gIFx9V3kfyAvAbQFVQDW1g">哪怕你在写对方的段落，段尾也要有自己的声音</strong>。<br data-page-node-id="n6JX05Dz1F0uTjECCWHidu">
+    这一段的三重效果：① 尊重地呈现了对方 ② 明确表示不同意 ③ 保持立场一致。
+    三个功能，一句话完成。</p>
+  </div>
+
+  <div class="note" data-page-node-id="Rbykcy5BHHxJPF2P7nI2CC">
+    <div class="lb" data-page-node-id="4bSDMF97AuaQ7WXAYIZGJ8">可复用模板</div>
+    <p data-page-node-id="cdfERf7ayccFXI2VMQXDI4">
+      <code data-page-node-id="6k6bUQfFxJqjlBnZHXgiX5">Those who + 观点 believe that + 主张 + 解释.</code><br data-page-node-id="PcJOSY9AkT1ENgCmNW6y4y">
+      <code data-page-node-id="zsWTGuLKE7Awv7L5yyn7OI">Moreover, + 主张 + by + 机制.</code><br data-page-node-id="dPBqEDg90GsQzoZI21qQM2">
+      <code data-page-node-id="rAzaNls5agfk3UZJG1zC98">However, in my opinion, + 反驳理由.</code><br data-page-node-id="9dpB6RjQHjfUAHgab96Vem">
+      <span style="color:var(--muted);font-size:14px;" data-page-node-id="lmjBwG6yLjMhE7oMmY9ePv">（模板是脚手架，不是答案——内容仍需你自己填。）</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="t2s5" data-page-node-id="hGDynyf1D70gbHLOiysi9Z">
+  <h2 data-page-node-id="CWsK63gKaREYjVNyji5L2y"><span class="num" data-page-node-id="Vp1xLyq17yGArSuA19Ck6n">05</span>Body · 分析阵营</h2>
+  <h3 data-page-node-id="POPC4rdd1jMP4uUJta4Cqm">直接回答问题，别绕</h3>
+
+  <p data-page-node-id="px5HyZf8iP2dBdrkBkarXO">
+    分析阵营没有观点要讨论，只有问题要回答。
+    <strong data-page-node-id="12TQPtUEiRItjlUeVWua5n">一个问号一段</strong>：原因一段，措施一段。
+    主题句也不再是"某某认为……"，而是<strong data-page-node-id="bzhgMZAEmBMLnzDoMddwuK">直接抛出答案</strong>。
+  </p>
+
+  <div class="ex" data-page-node-id="D8GlBzcm5V0cSBBEHnnyh4">
+    <div class="hd" data-page-node-id="F0RPM5xZo3yxvQc28D4e5F">分析阵营 · 主体段示范（原因段）</div>
+    <div class="bd" data-page-node-id="kOGuueWYhJxyAD0Gwk3jPJ">
+      <div class="sent s" data-page-node-id="vCXHG3NjbMhAjTZ461aDDe"><span class="fn" data-page-node-id="V4D1LOVozpjrxDtz0cgdjS">主题句 · 直接给答案</span>
+        <strong data-page-node-id="q6SDWbRHK4zQgGCf3dRdSC">One of the main reasons</strong> young people turn to crime is <strong data-page-node-id="OnEsGmSFPMuzlD8x4dZTHy">a lack of family support</strong>.</div><p class="cn" data-page-node-id="cn10">年轻人走向犯罪的主要原因之一是缺乏家庭支持。</p>
+      <p style="font-size:14px;color:var(--muted);margin:8px 0 14px;" data-page-node-id="Q56euJoFDqVHStqw0xQt5y">
+        ↑ 对比观点阵营的 <em data-page-node-id="PbzkhTnCH4FBMTZ3TfQ2Ta">Those who argue that…</em>：<strong data-page-node-id="3BfDEFAuSD3DuHtAxdPS34">这里没有"别人认为"，直接就是答案。</strong></p>
+
+      <div class="sent g" data-page-node-id="CFAhQDr7XR75CiV2Uzm5ZD"><span class="fn" data-page-node-id="GnhINRGZb5fsdXrex0yOO9">展开 · 关系从句塞细节</span>
+        Children growing up in unstable homes, <strong data-page-node-id="O1zP3BdSYn1DvxDTJXYBL4">where parents are absent or struggling financially</strong>, often do not receive the guidance they need.</div><p class="cn" data-page-node-id="cn11">在不稳定家庭（父母缺席或经济拮据）长大的孩子，往往得不到所需的引导。</p>
+      <p style="font-size:14px;color:var(--muted);margin:8px 0 14px;" data-page-node-id="L4fXOAtJGaPsjBwRVGl9yd">
+        ↑ <code data-page-node-id="qTD831bFEhoYVEzNsx5D0Z">where…</code> 是关系从句：<strong data-page-node-id="TLeZFvM0Mk5QAZzf6Jbe1L">把细节装进句子内部，不必另起一句</strong>。这是语法分的加分项。</p>
+
+      <div class="sent a" data-page-node-id="fESSvbMfULFcOPsGY9zUMM"><span class="fn" data-page-node-id="Jb8cd7DMVXQ4EhP0BUlJiQ">因果链接 · As a result</span>
+        <strong data-page-node-id="i9kywQYbFcrC49WCBjn9Oz">As a result</strong>, they may look for a sense of belonging and money elsewhere, sometimes through criminal activity.</div><p class="cn" data-page-node-id="cn12">因此，他们可能在别处寻求归属感与金钱，有时通过犯罪活动。</p>
+      <p style="font-size:14px;color:var(--muted);margin:8px 0 14px;" data-page-node-id="Fb48RYWeatQAFxoBnBW4La">
+        ↑ 把"缺支持"（因）和"走向犯罪"（果）<strong data-page-node-id="JVkrSsv4WBvA1h7NqItcUa">明确连起来</strong>。考官在找的就是这种句间逻辑。</p>
+
+      <div class="sent g" data-page-node-id="RCoKephl1ANspbqDASGFNE"><span class="fn" data-page-node-id="4y7MZwmyJJ40qxMAVdY9dC">第二个原因 · 简洁过渡句</span>
+        <strong data-page-node-id="EEq2vpH3kbvjj1keYpfbcc">Another common cause is</strong> a lack of educational opportunities.</div><p class="cn" data-page-node-id="cn13">另一个常见原因是缺乏教育机会。</p>
+      <p style="font-size:14px;color:var(--muted);margin:8px 0 14px;" data-page-node-id="40nAtVFMFfMNtWBIjH7DWj">
+        ↑ 不需要花哨。一个短句引出下一个论点，完全够用。</p>
+
+      <div class="sent g" data-page-node-id="KR2DwTOMgcHPnNdkE4dggs"><span class="fn" data-page-node-id="eSG5VkrDVyOCqtB1ElcYts">展开 · 例子 + 结果 + 收束</span>
+        A young person who leaves school early or attends a school with few resources has fewer options, <strong data-page-node-id="hq0ADi5rz6uRdVCZTP9QtG">which can make crime seem like the only way out</strong>.</div><p class="cn" data-page-node-id="cn14">早早辍学或就读资源匮乏学校的人，选择更少，这会让犯罪看似唯一的出路。</p>
+
+      <div class="sent g" data-page-node-id="60LA569dSmThP63NWSmKMr"><span class="fn" data-page-node-id="4Ie9Tj8fwfWNrrMXyV2oKq">第三个原因 · 口语化连接词也 OK</span>
+        <strong data-page-node-id="V8Zd3v0Pv1qqq6eaHEtGlG">On top of that</strong>, peer pressure also plays a role. Teenagers are easily influenced by those around them, and in some communities crime may <strong data-page-node-id="tGZGqGeGwtM1dRFKwF3wbh">be seen as</strong> normal or even respected.</div><p class="cn" data-page-node-id="cn15">此外，同辈压力也起作用。青少年易受周围人影响，而在某些社群中犯罪可能被视为正常甚至受尊重。</p>
+      <p style="font-size:14px;color:var(--muted);margin:8px 0 0;" data-page-node-id="7paTliLWBBRaxki643GLwg">
+        ↑ 末句用被动 <em data-page-node-id="rc3nmmCtZlFK7iHAKEJzML">may be seen as</em>：<strong data-page-node-id="k7uyQbGWWOYzMG9LnvyX82">谈普遍现象、不特指谁在"看"时，被动是最自然的选择。</strong>
+        这是被动语态的正确使用场景，不是为了炫技。</p>
+    </div>
+  </div>
+
+  <div class="grid g3" data-page-node-id="7s37sEBWfgLO2TXsk4jVDe">
+    <div class="card hi" data-page-node-id="OBg433nEyBL9hk8NOR9LbY">
+      <div class="tag" data-page-node-id="7SbIFDJfkWh12ekeh8QF1l">链接方式</div>
+      <p class="d" data-page-node-id="OCyrKCSH5A6HO5j2D1mbnT"><code data-page-node-id="FidseEKadOWT5VKMkBHTib">As a result</code> · <code data-page-node-id="vlYpoqFmfZZFbfGzpuj380">Because of this</code> · <code data-page-node-id="gBSH9wwGgHDAf9UvHLqJxk">This can lead to</code> · <code data-page-node-id="EuNXje3Gk6oc6WURMxa8DH">On top of that</code> · <code data-page-node-id="RliB8XoqmwfAkmGUdH7miV">In addition</code> · <code data-page-node-id="p8FkegjD4zvwQw0zDVBhhf">Furthermore</code>（较正式）</p>
+    </div>
+    <div class="card hi" data-page-node-id="qECL20hBnzxVIjHcJoofSG">
+      <div class="tag" data-page-node-id="rQpNZPoicju45wGgY1vHP2">原因类表达</div>
+      <p class="d" data-page-node-id="GUcHgGBCKLpl49Xzmfy2NU"><code data-page-node-id="1KPyQpwj6oTbjvsWJnw2CC">One of the main reasons is…</code> · <code data-page-node-id="CeOe2utJbgqFiB1nUC8JNd">Another common cause is…</code> · <code data-page-node-id="ObnMI2DYIzhtvRvDUWGoQb">…plays a role</code> · <code data-page-node-id="RplqUEgVwTYKhkXq1cQk6T">…contributes to…</code></p>
+    </div>
+    <div class="card hi" data-page-node-id="pQ2ocRzvMDtkcFG3XRJ5WC">
+      <div class="tag" data-page-node-id="Qto7ZJu2rGIdGcjFMLjRSg">语法加分点</div>
+      <p class="d" data-page-node-id="NS4KTApXkz9axAxe2Hdv4x">关系从句（<code data-page-node-id="KBEMTpH1D1uDxN9bcdAhsp">where</code> / <code data-page-node-id="3489VqpxAZmUyNsxTKfYK4">who</code>）· 非限制性定语从句（<code data-page-node-id="hUKSiVJWUo7zDX6thvlUVD">, which…</code>）· 被动语态自然化</p>
+    </div>
+  </div>
+
+  <div class="note ok" data-page-node-id="lUCDEh6EwWTKIsy7samAyD">
+    <div class="lb" data-page-node-id="RlygOapmoKKyGjGmVy1ycY">这一段的结构</div>
+    <p data-page-node-id="8K0Qxk40lYt41B5hXooh5V"><strong data-page-node-id="XKhiBZCGKHCEE1tIrLty0r">三个原因，每个原因都被解释并与后果相连，全程无个人观点。</strong><br data-page-node-id="FTVvCNugKpWrlK2siHp8q6">
+    这就是分析阵营的主体段理想形态：不评价、不表态，只把因果链讲清楚。</p>
+  </div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="t2s6" data-page-node-id="zlJ8xJMz2Arqhqd69xanj7">
+  <h2 data-page-node-id="HcAZCDZbUnvaB0yQxM2pPS"><span class="num" data-page-node-id="Y8B95MuUxqtDl30fQhcNpv">06</span>Conclusion</h2>
+  <h3 data-page-node-id="4DFB2YFloJIgw1JFaSW2sB">两句话，但要收对东西</h3>
+
+  <p data-page-node-id="nSJx0zo1vO9czAj0rWq1yW">两种阵营的结尾<strong data-page-node-id="3jm5bOSZOwD5nEUB3qSDoM">都以 <code data-page-node-id="4HuFotwg1nPVOAM7jSt9hB">In conclusion</code> 开头，都很短（两句）</strong>——差别在收什么。</p>
+
+  <div class="grid g2" data-page-node-id="yqKjeOTzCAiyLxtatXPyMy">
+    <div class="card hi2" data-page-node-id="n1JwXl9jq2rC6u3rUcslZN">
+      <div class="tag p" data-page-node-id="bjMORklKr3ErzdoiTdhLLL">观点阵营 · 收立场</div>
+      <p class="d" data-page-node-id="DqkEcRTp68oXhksVM47XgN"><strong data-page-node-id="vWZFZHwfm6IZzpGXFklMFR">第 1 句：</strong>一句话干两件事——<strong data-page-node-id="mk1LNXQ4pMQcD8BhX2rn8Z">承认对方 + 重申我方</strong><br data-page-node-id="nmRcqN3lhj4FhpDcfJwNMV">
+      <strong data-page-node-id="QlvSCdw7xLahHJqMC8kcU6">第 2 句：</strong>简短说明理由，<strong data-page-node-id="UgM50uahEBhw3ZQq8DaN1e">不引入任何新论点</strong></p>
+    </div>
+    <div class="card slate" data-page-node-id="Fnvnt2R9h2m0aJommpjhFc">
+      <div class="tag s" data-page-node-id="jLpwQKxFI45Wk1KcVmrb89">分析阵营 · 收答案</div>
+      <p class="d" data-page-node-id="z1FtNSlUkCEK71FJmlSHVt"><strong data-page-node-id="la3e2MFi4ihVMVCgQNnQKk">第 1 句：</strong>总结讨论过的<strong data-page-node-id="FfV5138pbZgJ6WWJPrsRe6">原因</strong><br data-page-node-id="O7fsp6m9mPh6GFg1CdjyfQ">
+      <strong data-page-node-id="YHXsNcMTCYYofMlvzDR11S">第 2 句：</strong>总结提出的<strong data-page-node-id="TGPcoaBGj6hAaHmsXAsBVB">解决方案</strong><br data-page-node-id="ZKb3jASUr3YtrP1GvnX4K9">
+      <span style="color:var(--muted);" data-page-node-id="vrUD4EQzqSkLybuEoVWjXM">无个人观点</span></p>
+    </div>
+  </div>
+
+  <div class="ex" data-page-node-id="TnoXGFcJvpIngKSTGb4hNw">
+    <div class="hd" data-page-node-id="LsDNatA2wjljotCctiUo2O">示范对照</div>
+    <div class="bd" data-page-node-id="8erCztTBrUaYyV8pX69jsk">
+      <div class="pair" data-page-node-id="cMCEJya5CrCGomzkRlQRf7">
+        <div data-page-node-id="oFp5o5NrgHD717uE98KQwH">
+          <div class="lb" data-page-node-id="hDuWmq32zKaCvc3FKzLD4q">观点阵营</div>
+          <p data-page-node-id="pqCZlkTbxDmkSH9VJ7J1aa"><strong data-page-node-id="yFHXatdWV1KZK7azeIHbCJ">In conclusion</strong>, while harsh punishment may seem like a strong response, <strong data-page-node-id="qtLXPo9xDHyVF35sk1RxVE">I believe</strong> education and support are more effective for young people. It offers a genuine chance to change, which benefits both the individual and society.</p><p class="cn" data-page-node-id="cn15">总之，尽管严厉惩罚看似强硬，但我相信教育与支持对年轻人更有效。它提供真正改变的机会，利于个人与社会。</p>
+        </div>
+        <div data-page-node-id="BMxzpRiNfTalBvtsJiOzHM">
+          <div class="lb" data-page-node-id="YxCLS6HnPSMjhwsRSrTCi7">分析阵营</div>
+          <p data-page-node-id="WLWgFa8kwUFGrm0wuM06EA"><strong data-page-node-id="EJu9cdk0l7Lf4eV91nBOBc">In conclusion</strong>, youth crime is often the result of difficult circumstances rather than choice. Governments that focus on improving education, communities and family support are more likely to bring about lasting change.</p><p class="cn" data-page-node-id="cn16">总之，青少年犯罪往往是困境所致，而非自主选择。专注于改善教育、社区与家庭支持的国家，更可能带来持久改变。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note warn" data-page-node-id="sgHndfYzNNt2biW1A0g3pz">
+    <div class="lb" data-page-node-id="G8z34kUCATsWEohk44pfTF">结尾三条禁忌</div>
+    <p data-page-node-id="4qAZiGzjQPh9kpAAGZ00tS"><strong data-page-node-id="TDAKibflGljaBVnlBp9Sml">① 引入新论点。</strong>结尾只能收束已有内容，新论点等于"没论证就下结论"。</p>
+    <p data-page-node-id="STFN6gUiG6FeaTiotKflal"><strong data-page-node-id="sIbv9uMvGyMR3gDX60weOT">② 重复开头原句。</strong>要换说法重申，不是复制粘贴。</p>
+    <p data-page-node-id="4wy3AIGUxlvtEraqs2VKMg"><strong data-page-node-id="BpbJw51ZRIVDI354CY1CIN">③ 分析阵营里突然冒出 "I think"。</strong>题目没问，写了就是跑题。</p>
+  </div>
+
+  <div class="note" data-page-node-id="dvNuMRnf2g91OZjOEFQGpP">
+    <div class="lb" data-page-node-id="KBNlvEpJXrbKhAmPGLDljT">一句话记住</div>
+    <p data-page-node-id="d5Bm0CPDgPQUkt6uP9G30a"><strong data-page-node-id="9aIeYfCtwtY1FFphBRsN5A">让题目告诉你该写什么样的结论。</strong>题目要观点 → 陈述立场；题目不要 → 总结答案。</p>
+  </div>
+</section>
+
+<!-- ============ 7 ============ -->
+<section id="t2s7" data-page-node-id="YXo3lAWmoXlBvwLzRVtauf">
+  <h2 data-page-node-id="UgvQ34n1kDpB1rryVbkV31"><span class="num" data-page-node-id="4DfFLbdhu4wrIw4ZEreCqi">07</span>句式取舍</h2>
+  <h3 data-page-node-id="G4TTaErBhccuFDkQLdtVP1">长句还是短句：一个止损原则</h3>
+
+  <p data-page-node-id="sxUROQohokgMPVaRgutRl0">
+    同一个意思，长句和短句都可以。选哪个？
+    <strong data-page-node-id="tKIHGbSbrlaxqtV4I7x5pp">取决于你对复杂句的把握程度，而不是哪个"看起来更高级"。</strong>
+  </p>
+
+  <div class="ex" data-page-node-id="EbQ90fYbOgB8Z7YYPKumoJ">
+    <div class="hd" data-page-node-id="GIg0w5oHM7r1SO4AQEM9x7">同一内容的两种写法</div>
+    <div class="bd" data-page-node-id="N96hpL2v0rYGX1vI3XCLqv">
+      <div class="sent a" data-page-node-id="BpWi4dSn4mEcQUUC7NeMuo"><span class="fn" data-page-node-id="fPPfnu5eaUfaLh1I1iPBdS">长句版 · 展示语法范围</span>
+        A young person who leaves school early or attends a school with few resources has fewer options, <strong data-page-node-id="N5q1l2KcOz8jF4Ce1cju7X">which can make crime seem like the only way out</strong>.</div><p class="cn" data-page-node-id="cn16">早早辍学或就读资源匮乏学校的人，选择更少，这会让犯罪看似唯一的出路。</p>
+      <div class="sent s" data-page-node-id="6fE4Z23uJ1HXHABFVtF97A"><span class="fn" data-page-node-id="9tlO4CUodXIzsw85gT6ZBw">短句版 · 更安全</span>
+        Young people who leave school early have no other options. <strong data-page-node-id="NYQSqdsJcgeHnpT01JNKp1">Therefore</strong>, they have fewer chances to stop, and crime can seem like the only way out.</div><p class="cn" data-page-node-id="cn17">早早辍学的年轻人别无选择。因此他们更少机会收手，犯罪便看似唯一的出路。</p>
+      <p style="margin-top:16px;font-size:14.5px;color:var(--ink-2);" data-page-node-id="EeUZVE13ZEAkGxg4A6HWaZ">
+        两句都对。长句能展示 <strong data-page-node-id="Ena0KtFRjLKkYYEFt45C2f">Grammatical Range</strong>；
+        但如果你对从句没把握，<strong data-page-node-id="468APckpsoIw2bSU5NuNrG">短句的错误率更低</strong>。
+        <strong data-page-node-id="7N7KJRYj6gZh3PxsylKgxG">减少错误，比炫技更划算。</strong>
+      </p>
+    </div>
+  </div>
+
+  <table data-page-node-id="ZIeIfxk4DcRafklQOX73V1">
+    <thead data-page-node-id="s93yibZ8fQr6qWcHk3Bs3Z"><tr data-page-node-id="okV4a3VdUOleHttnOTjDri"><th style="width:180px" data-page-node-id="8eNckyWswI06zw3ESHdacF">技巧</th><th style="width:300px" data-page-node-id="rM78oBuLMmOZ65MepcZPMp">例子</th><th data-page-node-id="YykDg3mTzq8PBep2NyOlLi">作用</th></tr></thead>
+    <tbody data-page-node-id="dUQOOEwfd2mBGTY7RW4XTd">
+      <tr data-page-node-id="2iHf4cowXfMtRRm6WivxlI">
+        <td data-page-node-id="uiiKPfGetqflZ8r8ZlOBwn"><strong data-page-node-id="1TA3ijrhlOKdvofduredV1">两部分句子</strong></td>
+        <td data-page-node-id="xJkHX79Dwwf5y9HhPoIuIB">…protects the public <strong data-page-node-id="5df8MRANsGG0F76p8IQsja">by keeping</strong> dangerous individuals off the streets.</td>
+        <td data-page-node-id="izUzKtSSZvcap1gmfY3AXN">主张 + 机制，一句话交代完整逻辑</td>
+      </tr>
+      <tr data-page-node-id="AhMv0CVwwh4tzPYEY3YE2f">
+        <td data-page-node-id="wsMh3cg9q2xL6KIlyHm3Jp"><strong data-page-node-id="Fze0wJh0HfdmI6VJfkA2R0">关系从句</strong></td>
+        <td data-page-node-id="SEjfyxnjWko68Kl20IZ1Tt">…unstable homes, <strong data-page-node-id="XmVODhAU4UCvkmztaD3gwd">where parents are absent</strong>…</td>
+        <td data-page-node-id="i5aBdNnEowKHNwfY6ajhuS">细节内嵌，不必另起一句</td>
+      </tr>
+      <tr data-page-node-id="DlBP7pgdlqWg1p0zJhJLlK">
+        <td data-page-node-id="Z3vcjyXEQORjF3fCSJdrG1"><strong data-page-node-id="NuWmfhExg3rLfqgHypcSJe">非限制性从句</strong></td>
+        <td data-page-node-id="Yso8pG6vs5ICe687CpHvef">…has fewer options, <strong data-page-node-id="azvBgqjDNdepPO3xTS19IG">which can make crime seem…</strong></td>
+        <td data-page-node-id="BbllgmPinQvzyOLktTXmYx">承接前句整体，制造因果链</td>
+      </tr>
+      <tr data-page-node-id="UqPJMUCzpyvIqS0O1GVF1j">
+        <td data-page-node-id="VvzsHDDhkRlV5A0LgVcJ5T"><strong data-page-node-id="7755CNs7yRvq3RTSkzkmZd">自然被动</strong></td>
+        <td data-page-node-id="sgH94KfvKEuvaQ2jjEOoIN">crime may <strong data-page-node-id="AaTCnPSOFrE7syAJXSJxB6">be seen as</strong> normal</td>
+        <td data-page-node-id="V6IuYmclBL5rBeOiCM0MZt">泛指、不强调施动者时使用</td>
+      </tr>
+      <tr data-page-node-id="nni9lexrUk93HQ8FKd9xjz">
+        <td data-page-node-id="Y4FYTCAMqSiisGm66fTlgF"><strong data-page-node-id="SDPYfNH2Rw1xG2IRLupeC9">while 对比</strong></td>
+        <td data-page-node-id="5qgeh7U9zXMtqcdz6dBKsG"><strong data-page-node-id="BjCSSDEMzC0xwYcnS9jPok">While</strong> some believe…, others argue…</td>
+        <td data-page-node-id="020YgddvlBblWsvJcAKniH">一句话并列双方，形成对照</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="note ok" data-page-node-id="NIDKlUyuHvc8UK3CnTt6fU">
+    <div class="lb" data-page-node-id="7DUq7kNNFVQkx2CsNUq3RN">止损原则</div>
+    <p data-page-node-id="gcpuhnq5vwpAS4doPYXUGi">写长句前问自己：<strong data-page-node-id="UjT9dIWTo0mIUUKzezZLEj">这个从句我有把握写对吗？</strong>
+    有把握 → 写，拿 Range 分。没把握 → 拆成两个短句，保 Accuracy 分。
+    <strong data-page-node-id="pGpCAkmQOYewhV2QxYLySQ">一个正确率存疑的长句，价值低于两个确定的短句。</strong></p>
+  </div>
+</section>
+
+<!-- ============ 8 ============ -->
+<section id="t2s8" data-page-node-id="H4K8M2r35U3rRmDwwWkGVn">
+  <h2 data-page-node-id="soC8USL1OOnm9KvKP60ycf"><span class="num" data-page-node-id="JRllfzm0p9inE9359CEb4G">08</span>评分映射</h2>
+  <h3 data-page-node-id="40bLpEDXrsh5nkKXktW8kM">你在做的事，对应哪一项分</h3>
+
+  <table data-page-node-id="rvNqg9VwRhbZWxdVqACYAD">
+    <thead data-page-node-id="9oGpLsOHCgoINTpBLPwZL7"><tr data-page-node-id="5Kar6GHi1OsCaxlsBdypZO"><th style="width:190px" data-page-node-id="Ith8r8Gri7xeGBbAuNWSDh">评分项（各占 25%）</th><th data-page-node-id="DIup2fGaoZEYXAXyKXyUGF">你的动作</th></tr></thead>
+    <tbody data-page-node-id="h8XI4V9NAAOkIvTtQzdehx">
+      <tr data-page-node-id="o0BpCcdOMesHAuzINr28oj">
+        <td data-page-node-id="f7mtj6hI2nwVU8xW1qHl03"><strong data-page-node-id="C2qtoA8mOg8HuLXC7SXsrE">Task Response</strong></td>
+        <td data-page-node-id="0FJuH8vKBdp9d61zKKgjl7">题型判断对了吗？立场贯穿了吗？想法<strong data-page-node-id="xYAhOh3Z9QABwdPGyrrtu6">展开</strong>了吗（而非只列观点）？有没有跑题塞无关内容？</td>
+      </tr>
+      <tr data-page-node-id="rya72hg6gP6IS5WKWelRfW">
+        <td data-page-node-id="2CCBZGmGRJlZkRLPDYuMpo"><strong data-page-node-id="60WZ8wxWXEs66tuBrGjvh4">Coherence &amp; Cohesion</strong></td>
+        <td data-page-node-id="NSbo3Nb05rOztPlIRxRFgp">每段有清晰中心主题吗？段落推进有逻辑顺序吗？句间有因果/转折标记吗？</td>
+      </tr>
+      <tr data-page-node-id="0HzJ4wLbvEcd199iNHAdfE">
+        <td data-page-node-id="INDui8bwvD366FFhBZtaYa"><strong data-page-node-id="ZuUShB3T8QvWkcLooI5RsR">Lexical Resource</strong></td>
+        <td data-page-node-id="HOPdV0Gq2pwq1evtzrz7Yy">题干改写了吗？同义替换自然吗？连接词有变化吗（别全篇 Furthermore）？</td>
+      </tr>
+      <tr data-page-node-id="Y1aTCwRZm0Sj5wdGDRpjkx">
+        <td data-page-node-id="qFrSp1jRa18NjEl2qC9t5W"><strong data-page-node-id="sBPHbrAsJi7uBqjcckDJZI">Grammatical Range</strong></td>
+        <td data-page-node-id="5tntYpyOH3ob3qqLS6h76t">有没有从句？长短句是否搭配？被动语态用得自然吗？错误率可控吗？</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="note" data-page-node-id="He5u3xeRiajLJx8oLz8jZq">
+    <div class="lb" data-page-node-id="iK8vSHHyoWVdviByEbLwWI">投入产出比排序</div>
+    <p data-page-node-id="B0DEp1yPs4XkWIvx5Smxi7"><strong data-page-node-id="kP5gAZAzhDwASj142PUg30">题型判断</strong>（判错全盘皆输）→ <strong data-page-node-id="SbOaEeFjMMO4NKMCQIxR8X">立场贯穿</strong>（7 分硬门槛）→ <strong data-page-node-id="USjLd0BOZAlhA5CE6ukK5B">想法展开</strong>（TR 的核心）→
+    <strong data-page-node-id="DCCOlW9RRXCGOgK8BlgxNO">主题句 + 因果连接</strong>（结构分）→ <strong data-page-node-id="YCO9ldV4BtOG2x5qGWSH8Q">从句与被动</strong>（语法范围）→ <strong data-page-node-id="iA9Y9LqttX3EdlSqxHZwHi">高级词汇</strong>（性价比最低）。</p>
+  </div>
+</section>
+
+<!-- ============ 9 ============ -->
+<section id="t2s9" data-page-node-id="CjmSU7RnBihgly9RKI09MO">
+  <h2 data-page-node-id="w2BAOPR9RBxuErJAF8OArF"><span class="num" data-page-node-id="dDsTmOxqvQWPgBDy5Ooy1z">09</span>自查清单</h2>
+  <h3 data-page-node-id="OzZnqBKngqYoFtRaX7CqXz">交卷前逐条过一遍</h3>
+
+  <h4 style="margin-top:24px;" data-page-node-id="g8hGAUSrX0ybfCbwO4CiKg">审题阶段</h4>
+  <ul class="check" data-page-node-id="blsCB1yVmLWZOESQ5HEXsZ">
+    <li data-page-node-id="lxXDjkVHnbMWmzVxvUu1bn"><b data-page-node-id="69uGi3cVrbIjsieXRY7vs3">圈出了指令里的疑问词</b> —— 知道有几个问号、文章分几块</li>
+    <li data-page-node-id="VvOmxZ2lwdbaaDyapquZhb"><b data-page-node-id="2PgGEhyNGuSREsqHeTFpMl">判断题型属于哪个阵营</b> —— 要观点 / 不要观点</li>
+    <li data-page-node-id="0SvhJfJNsTR8X5aUX01qCH"><b data-page-node-id="rT9GFVz3s4AraNgDtCHKop">观点阵营：立场已选定且可一句话说清</b></li>
+  </ul>
+
+  <h4 data-page-node-id="YJmC24w2Dzh97pzeTfQKiI">写作阶段</h4>
+  <ul class="check" data-page-node-id="gLsu3V07qeCOBDvIoCd1Gz">
+    <li data-page-node-id="tAR9jllhfPRPqz3uyIWBoR"><b data-page-node-id="bm6Lxz8KGu4x28lwCNOMMN">开头改写了题目</b>，没有整句照抄</li>
+    <li data-page-node-id="NDsuEkoFaicGfyIhA20TMB"><b data-page-node-id="vS9o9qH9zGSQopWv27ANBf">观点阵营：开头第 3 句明确了我的立场</b>，没有骑墙</li>
+    <li data-page-node-id="VIAcKYGgLdwzDJivtkT9kM"><b data-page-node-id="UASLICkB5FwufAkaxtTsAq">分析阵营：开头没有塞 "I think"</b></li>
+    <li data-page-node-id="TALSmkopiaU7klyC0CM1og"><b data-page-node-id="f6B2luKFbLuEy30UE0Mbig">每个主体段第一句都是主题句</b>，考官一眼知道这段讲什么</li>
+    <li data-page-node-id="l1Q6IVQWB9gdk48SpOaCMG"><b data-page-node-id="ALyTGbzXoOFRGKDctBJcsI">每个论点后面都跟了解释</b>（为什么成立 / 结果是什么），不是只抛观点</li>
+    <li data-page-node-id="tKed90RN9eGWqCS6S4JyIk"><b data-page-node-id="yy3zIIL9fQ1DGeGFAYRay0">观点阵营：连写对方观点的段落，段尾也有我的声音</b></li>
+    <li data-page-node-id="rJr0yqX3jAY0POOw7Nx1WI"><b data-page-node-id="Ad0DapWLAaCvqBwfl6pFK1">分析阵营：全程没有混入个人评价</b></li>
+    <li data-page-node-id="hTJafvceFJwXbQzRn14hOB"><b data-page-node-id="LuUS0DtU9sVdxTYAPM2h0Z">句间有因果/转折标记</b>（As a result / However / Moreover）</li>
+  </ul>
+
+  <h4 data-page-node-id="Birh2Z9oBDFN7fiSJr57e2">收尾阶段</h4>
+  <ul class="check" data-page-node-id="gmzZ8D4jbvl3VMnE2ZCcnX">
+    <li data-page-node-id="attP2cNtWo0rODQbRwBYYJ"><b data-page-node-id="2Vicqdbk0zMXv0YHKp2fEe">结论以 In conclusion 开头，只有两句话</b></li>
+    <li data-page-node-id="kPCBXTtrqUjkSQw5Zljl02"><b data-page-node-id="k582kZJ6lmPjD0KmGbhDlP">结论没有引入任何新论点</b></li>
+    <li data-page-node-id="1jNScM8JMMEwYqsAkuOTSL"><b data-page-node-id="4W50kZaql36JExx9ysroqn">观点阵营：结论承认了对方并重申了我方</b></li>
+    <li data-page-node-id="08XUt6kAQA0TbtFKYQYIUZ"><b data-page-node-id="FqKbzwSeg528HZV8d0CZug">分析阵营：结论分别总结了原因和措施</b></li>
+    <li data-page-node-id="halEccndafvZZPV7eOcqy0"><b data-page-node-id="qqvFc9SFBCa61qYjtWoFHp">字数超过 250</b>，且没有为了凑字数重复同一意思</li>
+    <li data-page-node-id="1DenoQdG8my2rrvdpYZG2M"><b data-page-node-id="uGq7KZr6krbnN3bFaiyulx">长句把握不大时已拆成短句</b></li>
+  </ul>
+</section>
+
+
+
+</div>
+
+</body>
+</html>
